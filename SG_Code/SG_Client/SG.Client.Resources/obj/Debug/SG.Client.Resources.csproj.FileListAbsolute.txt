@@ -1,0 +1,6 @@
+F:\SygolePosition\SGTeam\SG_Code\Exec\SG.Client.Resources.dll
+F:\SygolePosition\SGTeam\SG_Code\Exec\SG.Client.Resources.pdb
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Resources\obj\Debug\SG.Client.Resources.Properties.Resources.resources
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Resources\obj\Debug\SG.Client.Resources.csproj.GenerateResource.Cache
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Resources\obj\Debug\SG.Client.Resources.dll
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Resources\obj\Debug\SG.Client.Resources.pdb

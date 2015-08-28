@@ -1,0 +1,5 @@
+F:\SygolePosition\SGTeam\SG_Code\Exec\SG.Client.ADO.dll
+F:\SygolePosition\SGTeam\SG_Code\SG_Business\SG.Client.ADO\obj\Debug\SG.Client.ADO.dll
+F:\SygolePosition\SGTeam\SG_Code\SG_Business\SG.Client.ADO\obj\Debug\SG.Client.ADO.pdb
+F:\SygolePosition\SGTeam\SG_Code\Exec\SG.Client.ADO.pdb
+F:\SygolePosition\SGTeam\SG_Code\SG_Business\SG.Client.ADO\obj\Debug\SG.Client.ADODirect.csprojResolveAssemblyReference.cache

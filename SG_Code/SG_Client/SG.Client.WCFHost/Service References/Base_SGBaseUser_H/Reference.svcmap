@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6f845168-1007-4f97-94f3-f9081c4c6b3e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8008/SGBaseUser_H" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SGBaseUser_H.disco" MetadataType="Disco" ID="c72f5ed1-3802-475f-a778-ca83d9f70f8c" SourceId="1" SourceUrl="http://localhost:8008/SGBaseUser_H?disco" />
+    <MetadataFile FileName="SGBaseUser_H.wsdl" MetadataType="Wsdl" ID="afd10186-a8aa-4287-82ff-5086e6c99442" SourceId="1" SourceUrl="http://localhost:8008/SGBaseUser_H?wsdl=wsdl0" />
+    <MetadataFile FileName="SGBaseUser_H1.wsdl" MetadataType="Wsdl" ID="330ffb30-58ab-4044-8c01-9c7ae165880c" SourceId="1" SourceUrl="http://localhost:8008/SGBaseUser_H?wsdl=wsdl1" />
+    <MetadataFile FileName="SGBaseUser_H.xsd" MetadataType="Schema" ID="baf9b7a3-79dc-46fe-be2f-ba89197b43f0" SourceId="1" SourceUrl="http://localhost:8008/SGBaseUser_H?xsd=xsd1" />
+    <MetadataFile FileName="SGBaseUser_H1.xsd" MetadataType="Schema" ID="55563b5a-c714-4b3f-b4f2-ffa02bb167f4" SourceId="1" SourceUrl="http://localhost:8008/SGBaseUser_H?xsd=xsd0" />
+    <MetadataFile FileName="SGBaseUser.wsdl" MetadataType="Wsdl" ID="2c6b0434-ba89-4f9b-a071-72eb5d7300f4" SourceId="1" SourceUrl="http://localhost:8008/SGBaseUser_H?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

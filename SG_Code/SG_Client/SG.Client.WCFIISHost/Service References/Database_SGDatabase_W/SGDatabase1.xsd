@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="SG.Server.IISHost.Base" elementFormDefault="qualified" targetNamespace="SG.Server.IISHost.Base" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="AddCommonType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="sfid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddCommonTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddCommonTypeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchCommonType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="dataType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchCommonTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SearchCommonTypeResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCommonType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCommonTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteCommonTypeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsExistsCommonType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsExistsCommonTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsExistsCommonTypeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetItemClass">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="FNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetItemClassResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetItemClassResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteItemClass">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="FNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteItemClassResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteItemClassResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsExistsItemClass">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="FNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsExistsItemClassResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsExistsItemClassResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetItemDesc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="FNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetItemDescResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetItemDescResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteItemDesc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="fid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteItemDescResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteItemDescResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="Upfid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Downfid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetOrderResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

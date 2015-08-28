@@ -1,0 +1,166 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Client.ADODirect", "SG.Client.ADO\SG.Client.ADODirect.csproj", "{B5451846-6AC7-470D-8DA4-1AAA9EB50331}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Interfaces", "SG.Interfaces\SG.Interfaces.csproj", "{42374753-BD07-4D1E-B997-247FF358C23E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Interfaces.Base", "SG.Interfaces.Base\SG.Interfaces.Base.csproj", "{4FAEC63D-3152-4BD7-97B2-F08C1DCCD80B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Interfaces.Database", "SG.Interfaces.Database\SG.Interfaces.Database.csproj", "{22CE53B2-AA99-4E6D-A583-AA37F0F7A395}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Interfaces.Set", "SG.Interfaces.Set\SG.Interfaces.Set.csproj", "{6750F491-62EA-4286-9EC5-9251DE8E1F10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Models.Base", "SG.Models.Base\SG.Models.Base.csproj", "{E0535B56-E1B9-4D24-A89A-EBB86DE6901D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Models.Database", "SG.Models.Databse\SG.Models.Database.csproj", "{EC4DC2B1-84BA-4D0E-B072-599001418034}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Models.Set", "SG.Models.Set\SG.Models.Set.csproj", "{DC8C2167-2CB4-436E-86C6-775243D3B6CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.ORMTool", "SG.ORMTool\SG.ORMTool.csproj", "{8E4C810E-2D8C-43B8-B167-6A6F8C9E762E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Server.DataAccess", "SG.Server.DataAccess\SG.Server.DataAccess.csproj", "{22DFA98E-09D4-4F94-B7DF-9AE3FEACA6C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Server.DataAccess.Base", "SG.Server.DataAccess.Base\SG.Server.DataAccess.Base.csproj", "{FE952381-26ED-4D3D-91E8-7E567B874466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Server.DataAccess.Database", "SG.Server.DataAccess.Database\SG.Server.DataAccess.Database.csproj", "{93A93856-909D-412B-B8B8-2C361722CCFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Server.DataAccess.Set", "SG.Server.DataAccess.Set\SG.Server.DataAccess.Set.csproj", "{518E17C6-AD52-4D8F-892E-2138E1FE30BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Server.DataAccess.Account", "SG.Server.DataAccess.Account\SG.Server.DataAccess.Account.csproj", "{41FBDCAD-3815-484D-B220-E2529295BD7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Interfaces.ExtControl", "SG.Interfaces.ExtControl\SG.Interfaces.ExtControl.csproj", "{8B19173C-BF3A-4D4C-BB32-7AEC7871B814}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Server.DataAccess.ExtControl", "SG.Server.DataAccess.ExtControl\SG.Server.DataAccess.ExtControl.csproj", "{8DED110E-0773-48AC-A60D-FF72741B8882}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 17
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://sy_server:8080/tfs/sygole_dep
+		SccProjectUniqueName0 = SG.Client.ADO\\SG.Client.ADODirect.csproj
+		SccProjectName0 = SG.Client.ADO
+		SccLocalPath0 = SG.Client.ADO
+		SccProjectUniqueName1 = SG.Interfaces\\SG.Interfaces.csproj
+		SccProjectName1 = SG.Interfaces
+		SccLocalPath1 = SG.Interfaces
+		SccProjectUniqueName2 = SG.Interfaces.Base\\SG.Interfaces.Base.csproj
+		SccProjectName2 = SG.Interfaces.Base
+		SccLocalPath2 = SG.Interfaces.Base
+		SccProjectUniqueName3 = SG.Interfaces.Database\\SG.Interfaces.Database.csproj
+		SccProjectName3 = SG.Interfaces.Database
+		SccLocalPath3 = SG.Interfaces.Database
+		SccProjectUniqueName4 = SG.Interfaces.Set\\SG.Interfaces.Set.csproj
+		SccProjectName4 = SG.Interfaces.Set
+		SccLocalPath4 = SG.Interfaces.Set
+		SccProjectUniqueName5 = SG.Models.Base\\SG.Models.Base.csproj
+		SccProjectName5 = SG.Models.Base
+		SccLocalPath5 = SG.Models.Base
+		SccProjectUniqueName6 = SG.Models.Databse\\SG.Models.Database.csproj
+		SccProjectName6 = SG.Models.Databse
+		SccLocalPath6 = SG.Models.Databse
+		SccProjectUniqueName7 = SG.Models.Set\\SG.Models.Set.csproj
+		SccProjectName7 = SG.Models.Set
+		SccLocalPath7 = SG.Models.Set
+		SccProjectUniqueName8 = SG.ORMTool\\SG.ORMTool.csproj
+		SccProjectName8 = SG.ORMTool
+		SccLocalPath8 = SG.ORMTool
+		SccProjectUniqueName9 = SG.Server.DataAccess\\SG.Server.DataAccess.csproj
+		SccProjectName9 = SG.Server.DataAccess
+		SccLocalPath9 = SG.Server.DataAccess
+		SccProjectUniqueName10 = SG.Server.DataAccess.Base\\SG.Server.DataAccess.Base.csproj
+		SccProjectName10 = SG.Server.DataAccess.Base
+		SccLocalPath10 = SG.Server.DataAccess.Base
+		SccProjectUniqueName11 = SG.Server.DataAccess.Database\\SG.Server.DataAccess.Database.csproj
+		SccProjectName11 = SG.Server.DataAccess.Database
+		SccLocalPath11 = SG.Server.DataAccess.Database
+		SccProjectUniqueName12 = SG.Server.DataAccess.Set\\SG.Server.DataAccess.Set.csproj
+		SccProjectName12 = SG.Server.DataAccess.Set
+		SccLocalPath12 = SG.Server.DataAccess.Set
+		SccLocalPath13 = .
+		SccProjectUniqueName14 = SG.Server.DataAccess.Account\\SG.Server.DataAccess.Account.csproj
+		SccProjectName14 = SG.Server.DataAccess.Account
+		SccLocalPath14 = SG.Server.DataAccess.Account
+		SccProjectUniqueName15 = SG.Interfaces.ExtControl\\SG.Interfaces.ExtControl.csproj
+		SccProjectName15 = SG.Interfaces.ExtControl
+		SccLocalPath15 = SG.Interfaces.ExtControl
+		SccProjectUniqueName16 = SG.Server.DataAccess.ExtControl\\SG.Server.DataAccess.ExtControl.csproj
+		SccProjectName16 = SG.Server.DataAccess.ExtControl
+		SccLocalPath16 = SG.Server.DataAccess.ExtControl
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5451846-6AC7-470D-8DA4-1AAA9EB50331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5451846-6AC7-470D-8DA4-1AAA9EB50331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5451846-6AC7-470D-8DA4-1AAA9EB50331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5451846-6AC7-470D-8DA4-1AAA9EB50331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42374753-BD07-4D1E-B997-247FF358C23E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42374753-BD07-4D1E-B997-247FF358C23E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42374753-BD07-4D1E-B997-247FF358C23E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42374753-BD07-4D1E-B997-247FF358C23E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FAEC63D-3152-4BD7-97B2-F08C1DCCD80B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FAEC63D-3152-4BD7-97B2-F08C1DCCD80B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FAEC63D-3152-4BD7-97B2-F08C1DCCD80B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FAEC63D-3152-4BD7-97B2-F08C1DCCD80B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22CE53B2-AA99-4E6D-A583-AA37F0F7A395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22CE53B2-AA99-4E6D-A583-AA37F0F7A395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22CE53B2-AA99-4E6D-A583-AA37F0F7A395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22CE53B2-AA99-4E6D-A583-AA37F0F7A395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6750F491-62EA-4286-9EC5-9251DE8E1F10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6750F491-62EA-4286-9EC5-9251DE8E1F10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6750F491-62EA-4286-9EC5-9251DE8E1F10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6750F491-62EA-4286-9EC5-9251DE8E1F10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0535B56-E1B9-4D24-A89A-EBB86DE6901D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0535B56-E1B9-4D24-A89A-EBB86DE6901D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0535B56-E1B9-4D24-A89A-EBB86DE6901D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0535B56-E1B9-4D24-A89A-EBB86DE6901D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC4DC2B1-84BA-4D0E-B072-599001418034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC4DC2B1-84BA-4D0E-B072-599001418034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC4DC2B1-84BA-4D0E-B072-599001418034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC4DC2B1-84BA-4D0E-B072-599001418034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC8C2167-2CB4-436E-86C6-775243D3B6CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC8C2167-2CB4-436E-86C6-775243D3B6CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC8C2167-2CB4-436E-86C6-775243D3B6CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC8C2167-2CB4-436E-86C6-775243D3B6CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E4C810E-2D8C-43B8-B167-6A6F8C9E762E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E4C810E-2D8C-43B8-B167-6A6F8C9E762E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E4C810E-2D8C-43B8-B167-6A6F8C9E762E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E4C810E-2D8C-43B8-B167-6A6F8C9E762E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22DFA98E-09D4-4F94-B7DF-9AE3FEACA6C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22DFA98E-09D4-4F94-B7DF-9AE3FEACA6C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22DFA98E-09D4-4F94-B7DF-9AE3FEACA6C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22DFA98E-09D4-4F94-B7DF-9AE3FEACA6C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE952381-26ED-4D3D-91E8-7E567B874466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE952381-26ED-4D3D-91E8-7E567B874466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE952381-26ED-4D3D-91E8-7E567B874466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE952381-26ED-4D3D-91E8-7E567B874466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93A93856-909D-412B-B8B8-2C361722CCFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93A93856-909D-412B-B8B8-2C361722CCFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93A93856-909D-412B-B8B8-2C361722CCFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93A93856-909D-412B-B8B8-2C361722CCFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{518E17C6-AD52-4D8F-892E-2138E1FE30BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{518E17C6-AD52-4D8F-892E-2138E1FE30BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{518E17C6-AD52-4D8F-892E-2138E1FE30BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{518E17C6-AD52-4D8F-892E-2138E1FE30BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41FBDCAD-3815-484D-B220-E2529295BD7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41FBDCAD-3815-484D-B220-E2529295BD7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41FBDCAD-3815-484D-B220-E2529295BD7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41FBDCAD-3815-484D-B220-E2529295BD7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B19173C-BF3A-4D4C-BB32-7AEC7871B814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B19173C-BF3A-4D4C-BB32-7AEC7871B814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B19173C-BF3A-4D4C-BB32-7AEC7871B814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B19173C-BF3A-4D4C-BB32-7AEC7871B814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DED110E-0773-48AC-A60D-FF72741B8882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DED110E-0773-48AC-A60D-FF72741B8882}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DED110E-0773-48AC-A60D-FF72741B8882}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DED110E-0773-48AC-A60D-FF72741B8882}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

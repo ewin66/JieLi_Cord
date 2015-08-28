@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6941F371-4A71-491B-AF8B-02C53277BE7D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SG.Client.Library</RootNamespace>
+    <AssemblyName>SG.Client.Library</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Exec\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="SG.Business, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\SG.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="SG.Client.Bridge, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\SG.Client.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="SG.Client.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\SG.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SG.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\SG.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SG.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\SG.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="SG.Interfaces.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\SG.Interfaces.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="SG.Models.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\SG.Models.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonClass\AssemblyModuleEntry.cs" />
+    <Compile Include="CommonClass\ButtonList.cs" />
+    <Compile Include="CommonClass\DataBinder.cs" />
+    <Compile Include="CommonClass\DevGridView.cs" />
+    <Compile Include="CommonClass\DevStyle.cs" />
+    <Compile Include="CommonClass\MdiTools.cs" />
+    <Compile Include="CommonClass\MenuStripUtils.cs" />
+    <Compile Include="CommonClass\ModuleLoadDevComponent.cs" />
+    <Compile Include="CommonClass\ModuleLoader.cs" />
+    <Compile Include="CommonClass\ModuleManager.cs" />
+    <Compile Include="CommonClass\NavigatorLoader.cs" />
+    <Compile Include="CommonClass\SkinTools.cs" />
+    <Compile Include="CommonClass\SplashLable.cs" />
+    <Compile Include="CommonClass\ToolbarButtons.cs" />
+    <Compile Include="CommonClass\ToolbarRegister.cs" />
+    <Compile Include="CommonForms\frmFuzzySearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonForms\frmFuzzySearch.Designer.cs">
+      <DependentUpon>frmFuzzySearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForms\frmGridCustomize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonForms\frmGridCustomize.Designer.cs">
+      <DependentUpon>frmGridCustomize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForms\frmModifyPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonForms\frmModifyPwd.Designer.cs">
+      <DependentUpon>frmModifyPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForms\frmWaiting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonForms\frmWaiting.Designer.cs">
+      <DependentUpon>frmWaiting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBase.Designer.cs">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseChild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseChild.Designer.cs">
+      <DependentUpon>frmBaseChild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseDataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseDataBase.Designer.cs">
+      <DependentUpon>frmBaseDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseDataDictionary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseDataDictionary.Designer.cs">
+      <DependentUpon>frmBaseDataDictionary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseDataForm.Designer.cs">
+      <DependentUpon>frmBaseDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseDialog.Designer.cs">
+      <DependentUpon>frmBaseDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModuleBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModuleBase.Designer.cs">
+      <DependentUpon>frmModuleBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModuleContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModuleContainer.Designer.cs">
+      <DependentUpon>frmModuleContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResImage1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResImage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucAttachment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucAttachment.Designer.cs">
+      <DependentUpon>ucAttachment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCheckEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCheckEdit.Designer.cs">
+      <DependentUpon>ucCheckEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCheckedListBoxBinding.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCheckedListBoxBinding.Designer.cs">
+      <DependentUpon>ucCheckedListBoxBinding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCheckedListBoxEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCheckedListBoxEditor.Designer.cs">
+      <DependentUpon>ucCheckedListBoxEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucLabelDateTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucLabelDateTime.Designer.cs">
+      <DependentUpon>ucLabelDateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucLabelLookupEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucLabelLookupEdit.Designer.cs">
+      <DependentUpon>ucLabelLookupEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucLabelMemoEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucLabelMemoEdit.Designer.cs">
+      <DependentUpon>ucLabelMemoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucLabelTextEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucLabelTextEdit.Designer.cs">
+      <DependentUpon>ucLabelTextEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucLabelTextEditNum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucLabelTextEditNum.Designer.cs">
+      <DependentUpon>ucLabelTextEditNum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucValueEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucValueEdit.Designer.cs">
+      <DependentUpon>ucValueEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucWindowTitle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucWindowTitle.Designer.cs">
+      <DependentUpon>ucWindowTitle.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SG.Business.Base\SG.Business.Base.csproj">
+      <Project>{16f14da9-9e74-4e15-a7c6-4df9021c00a4}</Project>
+      <Name>SG.Business.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SG.Client.Bridge.Base\SG.Client.Bridge.Base.csproj">
+      <Project>{6ab5f277-9a0a-4f4c-8f39-71f1870de6c3}</Project>
+      <Name>SG.Client.Bridge.Base</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CommonForms\frmFuzzySearch.resx">
+      <DependentUpon>frmFuzzySearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonForms\frmGridCustomize.resx">
+      <DependentUpon>frmGridCustomize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonForms\frmModifyPwd.resx">
+      <DependentUpon>frmModifyPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonForms\frmWaiting.resx">
+      <DependentUpon>frmWaiting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBase.resx">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseChild.resx">
+      <DependentUpon>frmBaseChild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseDataDictionary.resx">
+      <DependentUpon>frmBaseDataDictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseDataForm.resx">
+      <DependentUpon>frmBaseDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseDialog.resx">
+      <DependentUpon>frmBaseDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModuleBase.resx">
+      <DependentUpon>frmModuleBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModuleContainer.resx">
+      <DependentUpon>frmModuleContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="ResImage.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResImage1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucAttachment.resx">
+      <DependentUpon>ucAttachment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCheckEdit.resx">
+      <DependentUpon>ucCheckEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCheckedListBoxBinding.resx">
+      <DependentUpon>ucCheckedListBoxBinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCheckedListBoxEditor.resx">
+      <DependentUpon>ucCheckedListBoxEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucLabelDateTime.resx">
+      <DependentUpon>ucLabelDateTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucLabelLookupEdit.resx">
+      <DependentUpon>ucLabelLookupEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucLabelMemoEdit.resx">
+      <DependentUpon>ucLabelMemoEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucLabelTextEdit.resx">
+      <DependentUpon>ucLabelTextEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucValueEdit.resx">
+      <DependentUpon>ucValueEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucWindowTitle.resx">
+      <DependentUpon>ucWindowTitle.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\2009011340768021.png" />
+    <Content Include="Resources\24_Add.ico" />
+    <Content Include="Resources\24_Approval.ico" />
+    <Content Include="Resources\24_attach.ico" />
+    <Content Include="Resources\24_Cancel.ico" />
+    <Content Include="Resources\24_Clone.ico" />
+    <Content Include="Resources\24_CreateDoc.ico" />
+    <Content Include="Resources\24_Delete.ico" />
+    <Content Include="Resources\24_DesignReport.ico" />
+    <Content Include="Resources\24_Edit.ico" />
+    <Content Include="Resources\24_Exit.ico" />
+    <Content Include="Resources\24_Exit1.ico" />
+    <Content Include="Resources\24_Export.ico" />
+    <Content Include="Resources\24_Help.ico" />
+    <Content Include="Resources\24_Help1.ico" />
+    <Content Include="Resources\24_History.ico" />
+    <Content Include="Resources\24_Info.ico" />
+    <Content Include="Resources\24_Lock.ico" />
+    <Content Include="Resources\24_Lock1.ico" />
+    <Content Include="Resources\24_Print.ico" />
+    <Content Include="Resources\24_PrintPreview.ico" />
+    <Content Include="Resources\24_Save.ico" />
+    <Content Include="Resources\24_UndoBill.ico" />
+    <Content Include="Resources\24_ViewContent.ico" />
+    <Content Include="Resources\24_Void.ico" />
+    <Content Include="Resources\4546.ico" />
+    <Content Include="Resources\btndelete.gif" />
+    <Content Include="Resources\ButtonCascade.png" />
+    <Content Include="Resources\csframework16.ico" />
+    <Content Include="Resources\find50x50.ico" />
+    <Content Include="Resources\Module.ico" />
+    <Content Include="Resources\noimg.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

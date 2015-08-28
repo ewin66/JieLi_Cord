@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="SG.Server.IISHost.Base" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SGBaseUser" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="http_ISGBaseUser_W_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="14400000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="SG.Server.IISHost.Base" location="http://localhost:22616/SGBaseUser.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="http_ISGBaseUser_W" type="i0:SGBaseUser_W">
+    <wsp:PolicyReference URI="#http_ISGBaseUser_W_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="U_GetUsers">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserReportData">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUserReportData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUser">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserGroups">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUserGroups" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserByNovellID">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUserByNovellID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_UpdateUser">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/U_UpdateUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_DeleteUser">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/U_DeleteUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_ExistsUser">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/U_ExistsUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_ModifyPassword">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/U_ModifyPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserAuthorities">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUserAuthorities" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_Logout">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/U_Logout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_Login">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/U_Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_LoginByCard">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/U_LoginByCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_ModifyPwdDirect">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/U_ModifyPwdDirect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserDirect">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUserDirect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="G_GetAuthorityItems">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/G_GetAuthorityItems" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="G_GetAuthorityItem">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/G_GetAuthorityItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="G_GetUserGroup">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/G_GetUserGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="G_GetUserGroupByCode">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/G_GetUserGroupByCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="G_GetFormTagCustomName">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/G_GetFormTagCustomName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="G_CheckNoExists">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/G_CheckNoExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="G_DeleteGroupByKey">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/G_DeleteGroupByKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="G_GetFormAuthority">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/G_GetFormAuthority" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFormShow">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/GetFormShow" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuAuthority">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/GetMenuAuthority" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuShow">
+      <soap12:operation soapAction="SG.Server.IISHost.Base/SGBaseUser_W/GetMenuShow" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SGBaseUser">
+    <wsdl:port name="http_ISGBaseUser_W" binding="tns:http_ISGBaseUser_W">
+      <soap12:address location="http://localhost:22616/SGBaseUser.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:22616/SGBaseUser.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>http://loaclhost:9000</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

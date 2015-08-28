@@ -1,0 +1,202 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Business", "SG.Business\SG.Business.csproj", "{387FE7EC-624D-4A7D-9F12-94D80D13DE72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Business.Base", "SG.Business.Base\SG.Business.Base.csproj", "{16F14DA9-9E74-4E15-A7C6-4DF9021C00A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Business.Database", "SG.Business.Database\SG.Business.Database.csproj", "{447DFBF9-F5A5-491C-852E-D7C5FDEC9486}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Business.Set", "SG.Business.Set\SG.Business.Set.csproj", "{D380EC95-8854-4ECE-8703-B7287D61B301}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Client.Bridge", "SG.Client.Bridge\SG.Client.Bridge.csproj", "{D8EB471A-176A-41DB-A087-2426C0F4E472}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Client.Bridge.Base", "SG.Client.Bridge.Base\SG.Client.Bridge.Base.csproj", "{6AB5F277-9A0A-4F4C-8F39-71F1870DE6C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Client.Bridge.Database", "SG.Client.Bridge.Database\SG.Client.Bridge.Database.csproj", "{D0FCDD68-A34A-4BE0-A451-463E0E1BEB1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Client.Bridge.Set", "SG.Client.Bridge.Set\SG.Client.Bridge.Set.csproj", "{D8E81449-C7BB-4C96-BA86-BFA877935068}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Client.Core", "SG.Client.Core\SG.Client.Core.csproj", "{564D6217-B47D-4D0F-8647-E3D8D4989BE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Client.Database", "SG.Client.Database\SG.Client.Database.csproj", "{04720D93-6C48-4F72-8A33-487119AD41CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Client.Library", "SG.Client.Library\SG.Client.Library.csproj", "{6941F371-4A71-491B-AF8B-02C53277BE7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Client.Main", "SG.Client.Main\SG.Client.Main.csproj", "{461B8D21-90A2-42E3-A0B0-CC208C48A631}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Client.Resources", "SG.Client.Resources\SG.Client.Resources.csproj", "{2A7BB143-4C76-498C-A4F4-242726120E29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Client.SetModule", "SG.Client.SetModule\SG.Client.SetModule.csproj", "{62D4B127-F608-4E44-AD18-59EF6DCD037D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Client.SystemModule", "SG.Client.SystemModule\SG.Client.SystemModule.csproj", "{FC7EED86-1515-41F2-A3B6-EFA495DA82DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Client.WCFHost", "SG.Client.WCFHost\SG.Client.WCFHost.csproj", "{729B5DB3-7C96-4BCF-801F-29D1812667E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Client.WCFIISHost", "SG.Client.WCFIISHost\SG.Client.WCFIISHost.csproj", "{EF3099F4-1369-4F61-855D-799963A1A220}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Client.Bridge.ExtControl", "SG.Client.Bridge.ExtControl\SG.Client.Bridge.ExtControl.csproj", "{DBC5FED0-4915-4D70-83C9-43A0C48838B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Business.ExtControl", "SG.Business.ExtControl\SG.Business.ExtControl.csproj", "{E6312987-E115-4F4A-A45E-0FAC1DFD09D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Client.Test", "SG.Client.Test\SG.Client.Test.csproj", "{89AFECDA-5BAA-4DBD-9FE8-C3A6D3C5FED4}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 21
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://sy_server:8080/tfs/sygole_dep
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SG.Business.Base\\SG.Business.Base.csproj
+		SccProjectName1 = SG.Business.Base
+		SccLocalPath1 = SG.Business.Base
+		SccProjectUniqueName2 = SG.Business.Database\\SG.Business.Database.csproj
+		SccProjectName2 = SG.Business.Database
+		SccLocalPath2 = SG.Business.Database
+		SccProjectUniqueName3 = SG.Business.ExtControl\\SG.Business.ExtControl.csproj
+		SccProjectName3 = SG.Business.ExtControl
+		SccLocalPath3 = SG.Business.ExtControl
+		SccProjectUniqueName4 = SG.Business.Set\\SG.Business.Set.csproj
+		SccProjectName4 = SG.Business.Set
+		SccLocalPath4 = SG.Business.Set
+		SccProjectUniqueName5 = SG.Business\\SG.Business.csproj
+		SccProjectName5 = SG.Business
+		SccLocalPath5 = SG.Business
+		SccProjectUniqueName6 = SG.Client.Bridge.Base\\SG.Client.Bridge.Base.csproj
+		SccProjectName6 = SG.Client.Bridge.Base
+		SccLocalPath6 = SG.Client.Bridge.Base
+		SccProjectUniqueName7 = SG.Client.Bridge.Database\\SG.Client.Bridge.Database.csproj
+		SccProjectName7 = SG.Client.Bridge.Database
+		SccLocalPath7 = SG.Client.Bridge.Database
+		SccProjectUniqueName8 = SG.Client.Bridge.ExtControl\\SG.Client.Bridge.ExtControl.csproj
+		SccProjectName8 = SG.Client.Bridge.ExtControl
+		SccLocalPath8 = SG.Client.Bridge.ExtControl
+		SccProjectUniqueName9 = SG.Client.Bridge.Set\\SG.Client.Bridge.Set.csproj
+		SccProjectName9 = SG.Client.Bridge.Set
+		SccLocalPath9 = SG.Client.Bridge.Set
+		SccProjectUniqueName10 = SG.Client.Bridge\\SG.Client.Bridge.csproj
+		SccProjectName10 = SG.Client.Bridge
+		SccLocalPath10 = SG.Client.Bridge
+		SccProjectUniqueName11 = SG.Client.Core\\SG.Client.Core.csproj
+		SccProjectName11 = SG.Client.Core
+		SccLocalPath11 = SG.Client.Core
+		SccProjectUniqueName12 = SG.Client.Database\\SG.Client.Database.csproj
+		SccProjectName12 = SG.Client.Database
+		SccLocalPath12 = SG.Client.Database
+		SccProjectUniqueName13 = SG.Client.Library\\SG.Client.Library.csproj
+		SccProjectName13 = SG.Client.Library
+		SccLocalPath13 = SG.Client.Library
+		SccProjectUniqueName14 = SG.Client.Main\\SG.Client.Main.csproj
+		SccProjectName14 = SG.Client.Main
+		SccLocalPath14 = SG.Client.Main
+		SccProjectUniqueName15 = SG.Client.Resources\\SG.Client.Resources.csproj
+		SccProjectName15 = SG.Client.Resources
+		SccLocalPath15 = SG.Client.Resources
+		SccProjectUniqueName16 = SG.Client.SetModule\\SG.Client.SetModule.csproj
+		SccProjectName16 = SG.Client.SetModule
+		SccLocalPath16 = SG.Client.SetModule
+		SccProjectUniqueName17 = SG.Client.SystemModule\\SG.Client.SystemModule.csproj
+		SccProjectName17 = SG.Client.SystemModule
+		SccLocalPath17 = SG.Client.SystemModule
+		SccProjectUniqueName18 = SG.Client.Test\\SG.Client.Test.csproj
+		SccProjectName18 = SG.Client.Test
+		SccLocalPath18 = SG.Client.Test
+		SccProjectUniqueName19 = SG.Client.WCFHost\\SG.Client.WCFHost.csproj
+		SccProjectName19 = SG.Client.WCFHost
+		SccLocalPath19 = SG.Client.WCFHost
+		SccProjectUniqueName20 = SG.Client.WCFIISHost\\SG.Client.WCFIISHost.csproj
+		SccProjectName20 = SG.Client.WCFIISHost
+		SccLocalPath20 = SG.Client.WCFIISHost
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{387FE7EC-624D-4A7D-9F12-94D80D13DE72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{387FE7EC-624D-4A7D-9F12-94D80D13DE72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{387FE7EC-624D-4A7D-9F12-94D80D13DE72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{387FE7EC-624D-4A7D-9F12-94D80D13DE72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16F14DA9-9E74-4E15-A7C6-4DF9021C00A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16F14DA9-9E74-4E15-A7C6-4DF9021C00A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16F14DA9-9E74-4E15-A7C6-4DF9021C00A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16F14DA9-9E74-4E15-A7C6-4DF9021C00A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{447DFBF9-F5A5-491C-852E-D7C5FDEC9486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{447DFBF9-F5A5-491C-852E-D7C5FDEC9486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{447DFBF9-F5A5-491C-852E-D7C5FDEC9486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{447DFBF9-F5A5-491C-852E-D7C5FDEC9486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D380EC95-8854-4ECE-8703-B7287D61B301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D380EC95-8854-4ECE-8703-B7287D61B301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D380EC95-8854-4ECE-8703-B7287D61B301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D380EC95-8854-4ECE-8703-B7287D61B301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8EB471A-176A-41DB-A087-2426C0F4E472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8EB471A-176A-41DB-A087-2426C0F4E472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8EB471A-176A-41DB-A087-2426C0F4E472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8EB471A-176A-41DB-A087-2426C0F4E472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AB5F277-9A0A-4F4C-8F39-71F1870DE6C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AB5F277-9A0A-4F4C-8F39-71F1870DE6C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AB5F277-9A0A-4F4C-8F39-71F1870DE6C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AB5F277-9A0A-4F4C-8F39-71F1870DE6C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0FCDD68-A34A-4BE0-A451-463E0E1BEB1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0FCDD68-A34A-4BE0-A451-463E0E1BEB1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0FCDD68-A34A-4BE0-A451-463E0E1BEB1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0FCDD68-A34A-4BE0-A451-463E0E1BEB1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8E81449-C7BB-4C96-BA86-BFA877935068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8E81449-C7BB-4C96-BA86-BFA877935068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8E81449-C7BB-4C96-BA86-BFA877935068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8E81449-C7BB-4C96-BA86-BFA877935068}.Release|Any CPU.Build.0 = Release|Any CPU
+		{564D6217-B47D-4D0F-8647-E3D8D4989BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{564D6217-B47D-4D0F-8647-E3D8D4989BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{564D6217-B47D-4D0F-8647-E3D8D4989BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{564D6217-B47D-4D0F-8647-E3D8D4989BE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04720D93-6C48-4F72-8A33-487119AD41CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04720D93-6C48-4F72-8A33-487119AD41CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04720D93-6C48-4F72-8A33-487119AD41CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04720D93-6C48-4F72-8A33-487119AD41CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6941F371-4A71-491B-AF8B-02C53277BE7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6941F371-4A71-491B-AF8B-02C53277BE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6941F371-4A71-491B-AF8B-02C53277BE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6941F371-4A71-491B-AF8B-02C53277BE7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{461B8D21-90A2-42E3-A0B0-CC208C48A631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{461B8D21-90A2-42E3-A0B0-CC208C48A631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{461B8D21-90A2-42E3-A0B0-CC208C48A631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{461B8D21-90A2-42E3-A0B0-CC208C48A631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A7BB143-4C76-498C-A4F4-242726120E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A7BB143-4C76-498C-A4F4-242726120E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A7BB143-4C76-498C-A4F4-242726120E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A7BB143-4C76-498C-A4F4-242726120E29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62D4B127-F608-4E44-AD18-59EF6DCD037D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D4B127-F608-4E44-AD18-59EF6DCD037D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D4B127-F608-4E44-AD18-59EF6DCD037D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D4B127-F608-4E44-AD18-59EF6DCD037D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC7EED86-1515-41F2-A3B6-EFA495DA82DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC7EED86-1515-41F2-A3B6-EFA495DA82DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC7EED86-1515-41F2-A3B6-EFA495DA82DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC7EED86-1515-41F2-A3B6-EFA495DA82DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{729B5DB3-7C96-4BCF-801F-29D1812667E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{729B5DB3-7C96-4BCF-801F-29D1812667E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{729B5DB3-7C96-4BCF-801F-29D1812667E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{729B5DB3-7C96-4BCF-801F-29D1812667E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF3099F4-1369-4F61-855D-799963A1A220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF3099F4-1369-4F61-855D-799963A1A220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF3099F4-1369-4F61-855D-799963A1A220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF3099F4-1369-4F61-855D-799963A1A220}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBC5FED0-4915-4D70-83C9-43A0C48838B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBC5FED0-4915-4D70-83C9-43A0C48838B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBC5FED0-4915-4D70-83C9-43A0C48838B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBC5FED0-4915-4D70-83C9-43A0C48838B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6312987-E115-4F4A-A45E-0FAC1DFD09D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6312987-E115-4F4A-A45E-0FAC1DFD09D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6312987-E115-4F4A-A45E-0FAC1DFD09D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6312987-E115-4F4A-A45E-0FAC1DFD09D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89AFECDA-5BAA-4DBD-9FE8-C3A6D3C5FED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89AFECDA-5BAA-4DBD-9FE8-C3A6D3C5FED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89AFECDA-5BAA-4DBD-9FE8-C3A6D3C5FED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89AFECDA-5BAA-4DBD-9FE8-C3A6D3C5FED4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

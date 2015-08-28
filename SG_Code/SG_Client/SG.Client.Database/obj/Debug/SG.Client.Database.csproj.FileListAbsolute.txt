@@ -1,0 +1,12 @@
+F:\SygolePosition\SGTeam\SG_Code\Exec\SG.Client.Database.dll
+F:\SygolePosition\SGTeam\SG_Code\Exec\SG.Client.Database.pdb
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Database\obj\Debug\SG.Client.Database.csprojResolveAssemblyReference.cache
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Database\obj\Debug\SG.Client.Database.frmCommonDataDict.resources
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Database\obj\Debug\SG.Client.Database.frmCommonItemClass.resources
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Database\obj\Debug\SG.Client.Database.frmDatabaseMain.resources
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Database\obj\Debug\SG.Client.Database.frmDatabaseSet.resources
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Database\obj\Debug\SG.Client.Database.Properties.Resources.resources
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Database\obj\Debug\SG.Client.Database.csproj.GenerateResource.Cache
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Database\obj\Debug\SG.Client.Database.dll.licenses
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Database\obj\Debug\SG.Client.Database.dll
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Database\obj\Debug\SG.Client.Database.pdb

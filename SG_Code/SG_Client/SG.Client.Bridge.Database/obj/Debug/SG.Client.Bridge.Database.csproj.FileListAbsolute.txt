@@ -1,0 +1,5 @@
+F:\SygolePosition\SGTeam\SG_Code\Exec\SG.Client.Bridge.Database.dll
+F:\SygolePosition\SGTeam\SG_Code\Exec\SG.Client.Bridge.Database.pdb
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Bridge.Database\obj\Debug\SG.Client.Bridge.Database.csprojResolveAssemblyReference.cache
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Bridge.Database\obj\Debug\SG.Client.Bridge.Database.dll
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Bridge.Database\obj\Debug\SG.Client.Bridge.Database.pdb

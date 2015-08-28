@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="800cd060-fed1-4009-b8ec-00e8f8516069" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8008/CommonService_H" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CommonService_H.xsd" MetadataType="Schema" ID="8ea1ebef-6518-434c-8141-669219b5454f" SourceId="1" SourceUrl="http://localhost:8008/CommonService_H?xsd=xsd2" />
+    <MetadataFile FileName="CommonService_H1.xsd" MetadataType="Schema" ID="fe80a14a-2715-4115-9cd9-2b8336870c5c" SourceId="1" SourceUrl="http://localhost:8008/CommonService_H?xsd=xsd1" />
+    <MetadataFile FileName="CommonService_H2.xsd" MetadataType="Schema" ID="a4221531-02be-468c-94ed-950cba4070c6" SourceId="1" SourceUrl="http://localhost:8008/CommonService_H?xsd=xsd0" />
+    <MetadataFile FileName="CommonService_H.wsdl" MetadataType="Wsdl" ID="9bfe0f4f-1457-40a3-946f-23c327412c12" SourceId="1" SourceUrl="http://localhost:8008/CommonService_H?wsdl=wsdl1" />
+    <MetadataFile FileName="CommonService.wsdl" MetadataType="Wsdl" ID="aec7a3b1-2d6b-4ffb-a337-e6f0ad526907" SourceId="1" SourceUrl="http://localhost:8008/CommonService_H?wsdl" />
+    <MetadataFile FileName="CommonService_H.disco" MetadataType="Disco" ID="b10921f9-9bf6-403f-b8bb-bd8ee2a8c414" SourceId="1" SourceUrl="http://localhost:8008/CommonService_H?disco" />
+    <MetadataFile FileName="CommonService_H1.wsdl" MetadataType="Wsdl" ID="bcfc9b91-a56d-46a4-81f8-6652364b467c" SourceId="1" SourceUrl="http://localhost:8008/CommonService_H?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

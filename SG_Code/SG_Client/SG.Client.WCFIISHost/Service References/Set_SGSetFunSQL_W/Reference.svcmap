@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7a266e2b-47df-4dfa-82c7-78bb0585ad63" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:22616/SGSetFunSQL.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SGSetFunSQL.xsd" MetadataType="Schema" ID="f765af2d-5874-4f16-b476-790e7c029525" SourceId="1" SourceUrl="http://localhost:22616/SGSetFunSQL.svc?xsd=xsd0" />
+    <MetadataFile FileName="SGSetFunSQL.wsdl" MetadataType="Wsdl" ID="dc8f2eb6-adbd-4b32-a462-09ffa7ebfb1c" SourceId="1" SourceUrl="http://localhost:22616/SGSetFunSQL.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="SGSetFunSQL.disco" MetadataType="Disco" ID="5254a503-afd6-417d-9e3c-636b2656e083" SourceId="1" SourceUrl="http://localhost:22616/SGSetFunSQL.svc?disco" />
+    <MetadataFile FileName="SGSetFunSQL1.wsdl" MetadataType="Wsdl" ID="fc336d1e-cc29-4743-9f44-61c71890edd5" SourceId="1" SourceUrl="http://localhost:22616/SGSetFunSQL.svc?wsdl" />
+    <MetadataFile FileName="SGSetFunSQL1.xsd" MetadataType="Schema" ID="4623d237-ac19-4703-bd3b-229896e8c622" SourceId="1" SourceUrl="http://localhost:22616/SGSetFunSQL.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

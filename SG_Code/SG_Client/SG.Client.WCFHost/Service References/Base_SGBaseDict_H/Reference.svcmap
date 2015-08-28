@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d3765218-4c4a-4645-8e5a-551ac796a888" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8008/SGBaseDict_H" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SGBaseDict_H.wsdl" MetadataType="Wsdl" ID="bc81f7b6-4189-4f89-807c-7225f33bb7e6" SourceId="1" SourceUrl="http://localhost:8008/SGBaseDict_H?wsdl=wsdl1" />
+    <MetadataFile FileName="SGBaseDict_H.xsd" MetadataType="Schema" ID="ec668e53-0df1-44c8-85c1-8ddc810387aa" SourceId="1" SourceUrl="http://localhost:8008/SGBaseDict_H?xsd=xsd1" />
+    <MetadataFile FileName="SGBaseDict.wsdl" MetadataType="Wsdl" ID="99c885dd-2d14-4242-8d39-303ec62dcfeb" SourceId="1" SourceUrl="http://localhost:8008/SGBaseDict_H?wsdl" />
+    <MetadataFile FileName="SGBaseDict_H.disco" MetadataType="Disco" ID="19f12acf-58e8-4850-abde-1315ea8f321f" SourceId="1" SourceUrl="http://localhost:8008/SGBaseDict_H?disco" />
+    <MetadataFile FileName="SGBaseDict_H1.xsd" MetadataType="Schema" ID="f3c48b8c-efd4-41cf-96b0-7eb8d90cff24" SourceId="1" SourceUrl="http://localhost:8008/SGBaseDict_H?xsd=xsd0" />
+    <MetadataFile FileName="SGBaseDict_H1.wsdl" MetadataType="Wsdl" ID="f3dbdb7c-a34e-4edb-80f4-9405d9c88a13" SourceId="1" SourceUrl="http://localhost:8008/SGBaseDict_H?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

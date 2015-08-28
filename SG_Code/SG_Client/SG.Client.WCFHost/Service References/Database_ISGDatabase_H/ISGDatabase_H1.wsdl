@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="SG.Server.Host.Database" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="SG.Server.Host.Database" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="SG.Server.Host.Database/Imports">
+      <xsd:import schemaLocation="http://localhost:8008/ISGDatabase_H?xsd=xsd0" namespace="SG.Server.Host.Database" />
+      <xsd:import schemaLocation="http://localhost:8008/ISGDatabase_H?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SGDatabase_H_AddCommonType_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCommonType" />
+  </wsdl:message>
+  <wsdl:message name="SGDatabase_H_AddCommonType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCommonTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGDatabase_H_SearchCommonType_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCommonType" />
+  </wsdl:message>
+  <wsdl:message name="SGDatabase_H_SearchCommonType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCommonTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGDatabase_H_DeleteCommonType_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCommonType" />
+  </wsdl:message>
+  <wsdl:message name="SGDatabase_H_DeleteCommonType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCommonTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGDatabase_H_IsExistsCommonType_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsExistsCommonType" />
+  </wsdl:message>
+  <wsdl:message name="SGDatabase_H_IsExistsCommonType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsExistsCommonTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGDatabase_H_GetItemClass_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetItemClass" />
+  </wsdl:message>
+  <wsdl:message name="SGDatabase_H_GetItemClass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetItemClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGDatabase_H_DeleteItemClass_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteItemClass" />
+  </wsdl:message>
+  <wsdl:message name="SGDatabase_H_DeleteItemClass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteItemClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGDatabase_H_IsExistsItemClass_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsExistsItemClass" />
+  </wsdl:message>
+  <wsdl:message name="SGDatabase_H_IsExistsItemClass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsExistsItemClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGDatabase_H_GetItemDesc_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetItemDesc" />
+  </wsdl:message>
+  <wsdl:message name="SGDatabase_H_GetItemDesc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetItemDescResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGDatabase_H_DeleteItemDesc_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteItemDesc" />
+  </wsdl:message>
+  <wsdl:message name="SGDatabase_H_DeleteItemDesc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteItemDescResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGDatabase_H_SetOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetOrder" />
+  </wsdl:message>
+  <wsdl:message name="SGDatabase_H_SetOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetOrderResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SGDatabase_H">
+    <wsdl:operation name="AddCommonType">
+      <wsdl:input wsaw:Action="SG.Server.Host.Database/SGDatabase_H/AddCommonType" message="tns:SGDatabase_H_AddCommonType_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Database/SGDatabase_H/AddCommonTypeResponse" message="tns:SGDatabase_H_AddCommonType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchCommonType">
+      <wsdl:input wsaw:Action="SG.Server.Host.Database/SGDatabase_H/SearchCommonType" message="tns:SGDatabase_H_SearchCommonType_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Database/SGDatabase_H/SearchCommonTypeResponse" message="tns:SGDatabase_H_SearchCommonType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCommonType">
+      <wsdl:input wsaw:Action="SG.Server.Host.Database/SGDatabase_H/DeleteCommonType" message="tns:SGDatabase_H_DeleteCommonType_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Database/SGDatabase_H/DeleteCommonTypeResponse" message="tns:SGDatabase_H_DeleteCommonType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsExistsCommonType">
+      <wsdl:input wsaw:Action="SG.Server.Host.Database/SGDatabase_H/IsExistsCommonType" message="tns:SGDatabase_H_IsExistsCommonType_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Database/SGDatabase_H/IsExistsCommonTypeResponse" message="tns:SGDatabase_H_IsExistsCommonType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemClass">
+      <wsdl:input wsaw:Action="SG.Server.Host.Database/SGDatabase_H/GetItemClass" message="tns:SGDatabase_H_GetItemClass_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Database/SGDatabase_H/GetItemClassResponse" message="tns:SGDatabase_H_GetItemClass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteItemClass">
+      <wsdl:input wsaw:Action="SG.Server.Host.Database/SGDatabase_H/DeleteItemClass" message="tns:SGDatabase_H_DeleteItemClass_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Database/SGDatabase_H/DeleteItemClassResponse" message="tns:SGDatabase_H_DeleteItemClass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsExistsItemClass">
+      <wsdl:input wsaw:Action="SG.Server.Host.Database/SGDatabase_H/IsExistsItemClass" message="tns:SGDatabase_H_IsExistsItemClass_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Database/SGDatabase_H/IsExistsItemClassResponse" message="tns:SGDatabase_H_IsExistsItemClass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemDesc">
+      <wsdl:input wsaw:Action="SG.Server.Host.Database/SGDatabase_H/GetItemDesc" message="tns:SGDatabase_H_GetItemDesc_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Database/SGDatabase_H/GetItemDescResponse" message="tns:SGDatabase_H_GetItemDesc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteItemDesc">
+      <wsdl:input wsaw:Action="SG.Server.Host.Database/SGDatabase_H/DeleteItemDesc" message="tns:SGDatabase_H_DeleteItemDesc_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Database/SGDatabase_H/DeleteItemDescResponse" message="tns:SGDatabase_H_DeleteItemDesc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetOrder">
+      <wsdl:input wsaw:Action="SG.Server.Host.Database/SGDatabase_H/SetOrder" message="tns:SGDatabase_H_SetOrder_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Database/SGDatabase_H/SetOrderResponse" message="tns:SGDatabase_H_SetOrder_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

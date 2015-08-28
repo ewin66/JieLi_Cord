@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="SG.Server.Host.Base" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="SG.Server.Host.Base" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="SG.Server.Host.Base/Imports">
+      <xsd:import schemaLocation="http://localhost:8008/SGBaseDict_H?xsd=xsd0" namespace="SG.Server.Host.Base" />
+      <xsd:import schemaLocation="http://localhost:8008/SGBaseDict_H?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SGBaseDict_H_GetDataByKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataByKey" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseDict_H_GetDataByKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataByKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseDict_H_GetSummaryData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSummaryData" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseDict_H_GetSummaryData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSummaryDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseDict_H_GetDataDictByTableName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataDictByTableName" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseDict_H_GetDataDictByTableName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataDictByTableNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseDict_H_DownloadDicts_InputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadDicts" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseDict_H_DownloadDicts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadDictsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseDict_H_Update_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseDict_H_Update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseDict_H_UpdateEx_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEx" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseDict_H_UpdateEx_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateExResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseDict_H_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseDict_H_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseDict_H_CheckNoExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckNoExists" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseDict_H_CheckNoExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckNoExistsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SGBaseDict_H">
+    <wsdl:operation name="GetDataByKey">
+      <wsdl:input wsaw:Action="SG.Server.Host.Base/SGBaseDict_H/GetDataByKey" message="tns:SGBaseDict_H_GetDataByKey_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Base/SGBaseDict_H/GetDataByKeyResponse" message="tns:SGBaseDict_H_GetDataByKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSummaryData">
+      <wsdl:input wsaw:Action="SG.Server.Host.Base/SGBaseDict_H/GetSummaryData" message="tns:SGBaseDict_H_GetSummaryData_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Base/SGBaseDict_H/GetSummaryDataResponse" message="tns:SGBaseDict_H_GetSummaryData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataDictByTableName">
+      <wsdl:input wsaw:Action="SG.Server.Host.Base/SGBaseDict_H/GetDataDictByTableName" message="tns:SGBaseDict_H_GetDataDictByTableName_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Base/SGBaseDict_H/GetDataDictByTableNameResponse" message="tns:SGBaseDict_H_GetDataDictByTableName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadDicts">
+      <wsdl:input wsaw:Action="SG.Server.Host.Base/SGBaseDict_H/DownloadDicts" message="tns:SGBaseDict_H_DownloadDicts_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Base/SGBaseDict_H/DownloadDictsResponse" message="tns:SGBaseDict_H_DownloadDicts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <wsdl:input wsaw:Action="SG.Server.Host.Base/SGBaseDict_H/Update" message="tns:SGBaseDict_H_Update_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Base/SGBaseDict_H/UpdateResponse" message="tns:SGBaseDict_H_Update_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEx">
+      <wsdl:input wsaw:Action="SG.Server.Host.Base/SGBaseDict_H/UpdateEx" message="tns:SGBaseDict_H_UpdateEx_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Base/SGBaseDict_H/UpdateExResponse" message="tns:SGBaseDict_H_UpdateEx_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:input wsaw:Action="SG.Server.Host.Base/SGBaseDict_H/Delete" message="tns:SGBaseDict_H_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Base/SGBaseDict_H/DeleteResponse" message="tns:SGBaseDict_H_Delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckNoExists">
+      <wsdl:input wsaw:Action="SG.Server.Host.Base/SGBaseDict_H/CheckNoExists" message="tns:SGBaseDict_H_CheckNoExists_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Base/SGBaseDict_H/CheckNoExistsResponse" message="tns:SGBaseDict_H_CheckNoExists_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

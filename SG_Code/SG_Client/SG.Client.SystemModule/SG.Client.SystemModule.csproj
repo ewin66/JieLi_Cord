@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FC7EED86-1515-41F2-A3B6-EFA495DA82DD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SG.Client.SystemModule</RootNamespace>
+    <AssemblyName>SG.Client.SystemModule</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Exec\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.1.Extensions, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="SG.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\SG.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SG.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\SG.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="SG.Models.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\SG.Models.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmChangeTagName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangeTagName.Designer.cs">
+      <DependentUpon>frmChangeTagName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompanyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompanyInfo.Designer.cs">
+      <DependentUpon>frmCompanyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDbLink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDbLink.Designer.cs">
+      <DependentUpon>frmDbLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGroup.Designer.cs">
+      <DependentUpon>frmGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuAuth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuAuth.Designer.cs">
+      <DependentUpon>frmMenuAuth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSystemMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSystemMain.Designer.cs">
+      <DependentUpon>frmSystemMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSystemProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSystemProfile.Designer.cs">
+      <DependentUpon>frmSystemProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\16_CustomerQuery.ico" />
+    <Content Include="Resources\24_Clone.ico" />
+    <Content Include="Resources\48_BackupDatabase.bmp" />
+    <Content Include="Resources\48_Customer.bmp" />
+    <Content Include="Resources\48_MaintainItem.bmp" />
+    <Content Include="Resources\48_MenuAuth.bmp" />
+    <Content Include="Resources\48_MenuAuth1.bmp" />
+    <Content Include="Resources\48_MenuAuth11.bmp" />
+    <Content Include="Resources\48_OperateLog.bmp" />
+    <Content Include="Resources\48_PaymentType.bmp" />
+    <Content Include="Resources\48_PeriodEnd.bmp" />
+    <Content Include="Resources\48_Pn.bmp" />
+    <Content Include="Resources\48_Quotation.bmp" />
+    <None Include="Resources\bj.jpg" />
+    <None Include="Resources\bj2.jpg" />
+    <Content Include="Resources\bk_reg.gif" />
+    <Content Include="Resources\ckg.bmp" />
+    <Content Include="Resources\Customer.png" />
+    <None Include="Resources\database_accept.png" />
+    <None Include="Resources\database.png" />
+    <Content Include="Resources\info-32x32.png" />
+    <Content Include="Resources\logo-for-app1.png" />
+    <None Include="Resources\sgtb.jpg" />
+    <Content Include="Resources\UserKey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmChangeTagName.resx">
+      <DependentUpon>frmChangeTagName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompanyInfo.resx">
+      <DependentUpon>frmCompanyInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDbLink.resx">
+      <DependentUpon>frmDbLink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGroup.resx">
+      <DependentUpon>frmGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuAuth.resx">
+      <DependentUpon>frmMenuAuth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSystemMain.resx">
+      <DependentUpon>frmSystemMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSystemProfile.resx">
+      <DependentUpon>frmSystemProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SG.Business.Base\SG.Business.Base.csproj">
+      <Project>{16f14da9-9e74-4e15-a7c6-4df9021c00a4}</Project>
+      <Name>SG.Business.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SG.Business\SG.Business.csproj">
+      <Project>{387fe7ec-624d-4a7d-9f12-94d80d13de72}</Project>
+      <Name>SG.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SG.Client.Bridge\SG.Client.Bridge.csproj">
+      <Project>{d8eb471a-176a-41db-a087-2426c0f4e472}</Project>
+      <Name>SG.Client.Bridge</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SG.Client.Core\SG.Client.Core.csproj">
+      <Project>{564d6217-b47d-4d0f-8647-e3d8d4989be5}</Project>
+      <Name>SG.Client.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SG.Client.Library\SG.Client.Library.csproj">
+      <Project>{6941f371-4a71-491b-af8b-02c53277be7d}</Project>
+      <Name>SG.Client.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

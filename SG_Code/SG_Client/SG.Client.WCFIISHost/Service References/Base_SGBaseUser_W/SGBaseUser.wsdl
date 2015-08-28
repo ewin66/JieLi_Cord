@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="SG.Server.IISHost.Base" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="SG.Server.IISHost.Base" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="SG.Server.IISHost.Base/Imports">
+      <xsd:import schemaLocation="http://localhost:22616/SGBaseUser.svc?xsd=xsd0" namespace="SG.Server.IISHost.Base" />
+      <xsd:import schemaLocation="http://localhost:22616/SGBaseUser.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SGBaseUser_W_U_GetUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUsers" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_GetUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_GetUserReportData_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserReportData" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_GetUserReportData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserReportDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_GetUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUser" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_GetUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_GetUserGroups_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserGroups" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_GetUserGroups_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_GetUserByNovellID_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserByNovellID" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_GetUserByNovellID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserByNovellIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_UpdateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_UpdateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_UpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_DeleteUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_DeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_DeleteUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_DeleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_ExistsUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_ExistsUser" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_ExistsUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_ExistsUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_ModifyPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_ModifyPassword" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_ModifyPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_ModifyPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_GetUserAuthorities_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserAuthorities" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_GetUserAuthorities_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserAuthoritiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_Logout_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_Logout" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_Logout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_LogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_Login" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_LoginByCard_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_LoginByCard" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_LoginByCard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_LoginByCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_ModifyPwdDirect_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_ModifyPwdDirect" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_ModifyPwdDirect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_ModifyPwdDirectResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_GetUserDirect_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserDirect" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_U_GetUserDirect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserDirectResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_G_GetAuthorityItems_InputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetAuthorityItems" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_G_GetAuthorityItems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetAuthorityItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_G_GetAuthorityItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetAuthorityItem" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_G_GetAuthorityItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetAuthorityItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_G_GetUserGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetUserGroup" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_G_GetUserGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetUserGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_G_GetUserGroupByCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetUserGroupByCode" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_G_GetUserGroupByCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetUserGroupByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_G_GetFormTagCustomName_InputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetFormTagCustomName" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_G_GetFormTagCustomName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetFormTagCustomNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_G_CheckNoExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:G_CheckNoExists" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_G_CheckNoExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:G_CheckNoExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_G_DeleteGroupByKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:G_DeleteGroupByKey" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_G_DeleteGroupByKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:G_DeleteGroupByKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_G_GetFormAuthority_InputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetFormAuthority" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_G_GetFormAuthority_OutputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetFormAuthorityResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_GetFormShow_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFormShow" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_GetFormShow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFormShowResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_GetMenuAuthority_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenuAuthority" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_GetMenuAuthority_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenuAuthorityResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_GetMenuShow_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenuShow" />
+  </wsdl:message>
+  <wsdl:message name="SGBaseUser_W_GetMenuShow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenuShowResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SGBaseUser_W">
+    <wsdl:operation name="U_GetUsers">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUsers" message="tns:SGBaseUser_W_U_GetUsers_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUsersResponse" message="tns:SGBaseUser_W_U_GetUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserReportData">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUserReportData" message="tns:SGBaseUser_W_U_GetUserReportData_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUserReportDataResponse" message="tns:SGBaseUser_W_U_GetUserReportData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUser">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUser" message="tns:SGBaseUser_W_U_GetUser_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUserResponse" message="tns:SGBaseUser_W_U_GetUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserGroups">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUserGroups" message="tns:SGBaseUser_W_U_GetUserGroups_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUserGroupsResponse" message="tns:SGBaseUser_W_U_GetUserGroups_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserByNovellID">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUserByNovellID" message="tns:SGBaseUser_W_U_GetUserByNovellID_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUserByNovellIDResponse" message="tns:SGBaseUser_W_U_GetUserByNovellID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_UpdateUser">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_UpdateUser" message="tns:SGBaseUser_W_U_UpdateUser_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_UpdateUserResponse" message="tns:SGBaseUser_W_U_UpdateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_DeleteUser">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_DeleteUser" message="tns:SGBaseUser_W_U_DeleteUser_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_DeleteUserResponse" message="tns:SGBaseUser_W_U_DeleteUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_ExistsUser">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_ExistsUser" message="tns:SGBaseUser_W_U_ExistsUser_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_ExistsUserResponse" message="tns:SGBaseUser_W_U_ExistsUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_ModifyPassword">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_ModifyPassword" message="tns:SGBaseUser_W_U_ModifyPassword_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_ModifyPasswordResponse" message="tns:SGBaseUser_W_U_ModifyPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserAuthorities">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUserAuthorities" message="tns:SGBaseUser_W_U_GetUserAuthorities_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUserAuthoritiesResponse" message="tns:SGBaseUser_W_U_GetUserAuthorities_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_Logout">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_Logout" message="tns:SGBaseUser_W_U_Logout_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_LogoutResponse" message="tns:SGBaseUser_W_U_Logout_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_Login">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_Login" message="tns:SGBaseUser_W_U_Login_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_LoginResponse" message="tns:SGBaseUser_W_U_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_LoginByCard">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_LoginByCard" message="tns:SGBaseUser_W_U_LoginByCard_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_LoginByCardResponse" message="tns:SGBaseUser_W_U_LoginByCard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_ModifyPwdDirect">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_ModifyPwdDirect" message="tns:SGBaseUser_W_U_ModifyPwdDirect_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_ModifyPwdDirectResponse" message="tns:SGBaseUser_W_U_ModifyPwdDirect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserDirect">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUserDirect" message="tns:SGBaseUser_W_U_GetUserDirect_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/U_GetUserDirectResponse" message="tns:SGBaseUser_W_U_GetUserDirect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="G_GetAuthorityItems">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/G_GetAuthorityItems" message="tns:SGBaseUser_W_G_GetAuthorityItems_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/G_GetAuthorityItemsResponse" message="tns:SGBaseUser_W_G_GetAuthorityItems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="G_GetAuthorityItem">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/G_GetAuthorityItem" message="tns:SGBaseUser_W_G_GetAuthorityItem_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/G_GetAuthorityItemResponse" message="tns:SGBaseUser_W_G_GetAuthorityItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="G_GetUserGroup">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/G_GetUserGroup" message="tns:SGBaseUser_W_G_GetUserGroup_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/G_GetUserGroupResponse" message="tns:SGBaseUser_W_G_GetUserGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="G_GetUserGroupByCode">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/G_GetUserGroupByCode" message="tns:SGBaseUser_W_G_GetUserGroupByCode_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/G_GetUserGroupByCodeResponse" message="tns:SGBaseUser_W_G_GetUserGroupByCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="G_GetFormTagCustomName">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/G_GetFormTagCustomName" message="tns:SGBaseUser_W_G_GetFormTagCustomName_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/G_GetFormTagCustomNameResponse" message="tns:SGBaseUser_W_G_GetFormTagCustomName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="G_CheckNoExists">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/G_CheckNoExists" message="tns:SGBaseUser_W_G_CheckNoExists_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/G_CheckNoExistsResponse" message="tns:SGBaseUser_W_G_CheckNoExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="G_DeleteGroupByKey">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/G_DeleteGroupByKey" message="tns:SGBaseUser_W_G_DeleteGroupByKey_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/G_DeleteGroupByKeyResponse" message="tns:SGBaseUser_W_G_DeleteGroupByKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="G_GetFormAuthority">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/G_GetFormAuthority" message="tns:SGBaseUser_W_G_GetFormAuthority_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/G_GetFormAuthorityResponse" message="tns:SGBaseUser_W_G_GetFormAuthority_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFormShow">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/GetFormShow" message="tns:SGBaseUser_W_GetFormShow_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/GetFormShowResponse" message="tns:SGBaseUser_W_GetFormShow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuAuthority">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/GetMenuAuthority" message="tns:SGBaseUser_W_GetMenuAuthority_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/GetMenuAuthorityResponse" message="tns:SGBaseUser_W_GetMenuAuthority_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuShow">
+      <wsdl:input wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/GetMenuShow" message="tns:SGBaseUser_W_GetMenuShow_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.IISHost.Base/SGBaseUser_W/GetMenuShowResponse" message="tns:SGBaseUser_W_GetMenuShow_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A13F643F-D6A7-4CD5-B0B0-681D97B6D8C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SG.Server.Host</RootNamespace>
+    <AssemblyName>SG.Server.Host</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Exec\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\WCF_ICO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SG.Interfaces.ExtControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\SG.Interfaces.ExtControl.dll</HintPath>
+    </Reference>
+    <Reference Include="SG.Server.DataAccess.ExtControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\SG.Server.DataAccess.ExtControl.dll</HintPath>
+    </Reference>
+    <Reference Include="SG.Tools.DataOperate, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Exec\SG.Tools.DataOperate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\CommonService.cs" />
+    <Compile Include="Base\ICommonService_H.cs" />
+    <Compile Include="Base\ISGBaseDict_H.cs" />
+    <Compile Include="Base\SGBaseDict.cs" />
+    <Compile Include="Base\SGBaseUser.cs" />
+    <Compile Include="Database\ISGDatabase_H.cs" />
+    <Compile Include="Database\SGDatabase.cs" />
+    <Compile Include="ExtControl\ExtGridControl.cs" />
+    <Compile Include="ExtControl\IExtGridControl_H.cs" />
+    <Compile Include="frmHost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHost.Designer.cs">
+      <DependentUpon>frmHost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ISGBaseUser_H.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Set\ISGSetFunSQL_H.cs" />
+    <Compile Include="Set\SGSetFunSQL.cs" />
+    <EmbeddedResource Include="frmHost.resx">
+      <DependentUpon>frmHost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SG_Business\SG.Interfaces.Base\SG.Interfaces.Base.csproj">
+      <Project>{4faec63d-3152-4bd7-97b2-f08c1dccd80b}</Project>
+      <Name>SG.Interfaces.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SG_Business\SG.Interfaces.Database\SG.Interfaces.Database.csproj">
+      <Project>{22ce53b2-aa99-4e6d-a583-aa37f0f7a395}</Project>
+      <Name>SG.Interfaces.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SG_Business\SG.Interfaces.Set\SG.Interfaces.Set.csproj">
+      <Project>{6750f491-62ea-4286-9ec5-9251de8e1f10}</Project>
+      <Name>SG.Interfaces.Set</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SG_Business\SG.Interfaces\SG.Interfaces.csproj">
+      <Project>{42374753-bd07-4d1e-b997-247ff358c23e}</Project>
+      <Name>SG.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SG_Business\SG.Server.DataAccess.Base\SG.Server.DataAccess.Base.csproj">
+      <Project>{fe952381-26ed-4d3d-91e8-7e567b874466}</Project>
+      <Name>SG.Server.DataAccess.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SG_Business\SG.Server.DataAccess.Database\SG.Server.DataAccess.Database.csproj">
+      <Project>{93a93856-909d-412b-b8b8-2c361722ccfa}</Project>
+      <Name>SG.Server.DataAccess.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SG_Business\SG.Server.DataAccess.Set\SG.Server.DataAccess.Set.csproj">
+      <Project>{518e17c6-ad52-4d8f-892e-2138e1fe30bf}</Project>
+      <Name>SG.Server.DataAccess.Set</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SG_Business\SG.Server.DataAccess\SG.Server.DataAccess.csproj">
+      <Project>{22dfa98e-09d4-4f94-b7df-9ae3feaca6c5}</Project>
+      <Name>SG.Server.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SG_Public\SG.Common\SG.Common.csproj">
+      <Project>{fbaf858a-b833-4dd1-a020-5d582ede9235}</Project>
+      <Name>SG.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SG_Public\SG.Parameters\SG.Parameters.csproj">
+      <Project>{74a4deed-5f5b-43ba-8a2f-948533ebf2be}</Project>
+      <Name>SG.Parameters</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WCF_ICO.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

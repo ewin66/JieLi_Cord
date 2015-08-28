@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c8e034b3-160d-4e2f-94b7-f0d951fa4e07" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:22616/SGBaseUser.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SGBaseUser.xsd" MetadataType="Schema" ID="31e74fd8-0c61-4dc9-8d12-6155d6f598bd" SourceId="1" SourceUrl="http://localhost:22616/SGBaseUser.svc?xsd=xsd0" />
+    <MetadataFile FileName="SGBaseUser1.xsd" MetadataType="Schema" ID="8cbe1f91-2d43-4e26-b5ab-20db14f81933" SourceId="1" SourceUrl="http://localhost:22616/SGBaseUser.svc?xsd=xsd1" />
+    <MetadataFile FileName="SGBaseUser.disco" MetadataType="Disco" ID="334c0573-cdab-409a-95cc-4f623f9044ec" SourceId="1" SourceUrl="http://localhost:22616/SGBaseUser.svc?disco" />
+    <MetadataFile FileName="SGBaseUser.wsdl" MetadataType="Wsdl" ID="397b098b-f0be-4e64-8b01-feeb14abb54a" SourceId="1" SourceUrl="http://localhost:22616/SGBaseUser.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="SGBaseUser1.wsdl" MetadataType="Wsdl" ID="70786cce-5155-4224-be4e-6d111d040e21" SourceId="1" SourceUrl="http://localhost:22616/SGBaseUser.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,5 @@
+F:\SygolePosition\SGTeam\SG_Code\Exec\SG.Client.WCFIISHost.dll.config
+F:\SygolePosition\SGTeam\SG_Code\Exec\SG.Client.WCFIISHost.dll
+F:\SygolePosition\SGTeam\SG_Code\Exec\SG.Client.WCFIISHost.pdb
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.WCFIISHost\obj\Debug\SG.Client.WCFIISHost.dll
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.WCFIISHost\obj\Debug\SG.Client.WCFIISHost.pdb

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d9ee9d81-cbdf-4086-96de-2ede5df2bd76" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8008/ExtGridControl_H" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ExtGridControl_H.disco" MetadataType="Disco" ID="fbc9b46c-6f46-4527-8a88-c90067944990" SourceId="1" SourceUrl="http://localhost:8008/ExtGridControl_H?disco" />
+    <MetadataFile FileName="ExtGridControl_H.wsdl" MetadataType="Wsdl" ID="048145ea-288b-448c-afa8-0d02e26fa59d" SourceId="1" SourceUrl="http://localhost:8008/ExtGridControl_H?wsdl=wsdl1" />
+    <MetadataFile FileName="ExtGridControl_H.xsd" MetadataType="Schema" ID="768c716a-517f-4331-986c-1d8ab6873b9e" SourceId="1" SourceUrl="http://localhost:8008/ExtGridControl_H?xsd=xsd0" />
+    <MetadataFile FileName="ExtGridControl.wsdl" MetadataType="Wsdl" ID="37f13d8f-7809-4e99-9d55-5d53f14bcd0f" SourceId="1" SourceUrl="http://localhost:8008/ExtGridControl_H?wsdl" />
+    <MetadataFile FileName="ExtGridControl_H1.xsd" MetadataType="Schema" ID="5cd8b9a4-e0b0-4309-9749-0f9680d54714" SourceId="1" SourceUrl="http://localhost:8008/ExtGridControl_H?xsd=xsd1" />
+    <MetadataFile FileName="ExtGridControl_H1.wsdl" MetadataType="Wsdl" ID="a45e1a8d-b5ea-4b35-b0a3-e4e792a60401" SourceId="1" SourceUrl="http://localhost:8008/ExtGridControl_H?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

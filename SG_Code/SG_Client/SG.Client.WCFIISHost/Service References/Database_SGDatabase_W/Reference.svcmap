@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="35c2e734-35e0-467b-8c11-d2fd751c3daf" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:22616/SGDatabase.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SGDatabase.wsdl" MetadataType="Wsdl" ID="f1bc54de-a551-4435-aec9-ec520eeb6455" SourceId="1" SourceUrl="http://localhost:22616/SGDatabase.svc?wsdl" />
+    <MetadataFile FileName="SGDatabase.xsd" MetadataType="Schema" ID="b69793f8-94b8-45fe-b96c-22f7cb2390ef" SourceId="1" SourceUrl="http://localhost:22616/SGDatabase.svc?xsd=xsd1" />
+    <MetadataFile FileName="SGDatabase1.xsd" MetadataType="Schema" ID="1f7ecbc2-22cf-4d38-8bac-b51dad9dba96" SourceId="1" SourceUrl="http://localhost:22616/SGDatabase.svc?xsd=xsd0" />
+    <MetadataFile FileName="SGDatabase1.wsdl" MetadataType="Wsdl" ID="b3d05761-ac3f-41c1-9f1c-8675d270bf10" SourceId="1" SourceUrl="http://localhost:22616/SGDatabase.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="SGDatabase.disco" MetadataType="Disco" ID="df1767e2-a1a4-4bb8-80ad-1e297621f749" SourceId="1" SourceUrl="http://localhost:22616/SGDatabase.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

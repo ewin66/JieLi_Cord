@@ -1,0 +1,91 @@
+﻿///*************************************************************************/
+///*
+///* 文件名    ：ItemObject.cs                                      
+///* 程序说明  : 用于扩展Tag标记的自定义对象
+///* 原创作者  ：东莞思谷 XW Peng 
+///* 
+///* Copyright 2014-2015 东莞思谷数字技术有限公司
+///**************************************************************************/
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SG.Common
+{
+    /// <summary>
+    /// 用于扩展Tag标记的自定义对象
+    /// </summary>
+    public class TagObject
+    {
+        private string _KeyName;
+        private object _Value;
+
+        public TagObject() { }
+        public TagObject(string keyName, object value)
+        {
+            KeyName = keyName;
+            Value = value;
+        }
+
+        /// <summary>
+        /// 对象引用
+        /// </summary>
+        public object Value
+        {
+            get { return _Value; }
+            set { _Value = value; }
+        }
+
+        /// <summary>
+        /// 键
+        /// </summary>
+        public string KeyName
+        {
+            get { return _KeyName; }
+            set { _KeyName = value; }
+        }
+
+        /// <summary>
+        /// 返回该对象的说明
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return KeyName;
+        }
+    }
+
+    /// <summary>
+    /// 用于扩展.Items集合类型的自定义对象
+    /// </summary>
+    public class ItemObject : TagObject
+    {
+        protected object _Tag;
+
+        public ItemObject(string keyName, object value, object tag)
+            : this(keyName, value)
+        {
+            _Tag = tag;
+        }
+
+        public ItemObject(string keyName, object value)
+            : base(keyName, value)
+        {
+            _Tag = null;
+        }
+
+        public override string ToString()
+        {
+            return KeyName;
+        }
+
+        public object Tag
+        {
+            get { return _Tag; }
+            set { _Tag = value; }
+        }
+    }
+}

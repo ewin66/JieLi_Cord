@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="89f04598-bb59-49fb-9db0-b5978af2c78b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8008/ISGSetFunSQL_H" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SGSetFunSQL.wsdl" MetadataType="Wsdl" ID="a1102811-3d68-4b01-9a36-0f516ddc9cf0" SourceId="1" SourceUrl="http://localhost:8008/ISGSetFunSQL_H?wsdl" />
+    <MetadataFile FileName="ISGSetFunSQL_H.xsd" MetadataType="Schema" ID="2bec21a6-2dc8-4760-a1d2-7927ae7fad1c" SourceId="1" SourceUrl="http://localhost:8008/ISGSetFunSQL_H?xsd=xsd0" />
+    <MetadataFile FileName="ISGSetFunSQL_H1.xsd" MetadataType="Schema" ID="effa076c-e8bd-4b09-b326-1b0ac57e974b" SourceId="1" SourceUrl="http://localhost:8008/ISGSetFunSQL_H?xsd=xsd1" />
+    <MetadataFile FileName="ISGSetFunSQL_H.disco" MetadataType="Disco" ID="7fe41a92-18ea-46f3-a36c-d1ddca9c2db0" SourceId="1" SourceUrl="http://localhost:8008/ISGSetFunSQL_H?disco" />
+    <MetadataFile FileName="ISGSetFunSQL_H.wsdl" MetadataType="Wsdl" ID="e8d5b516-bcfd-4360-a0b8-114036795094" SourceId="1" SourceUrl="http://localhost:8008/ISGSetFunSQL_H?wsdl=wsdl0" />
+    <MetadataFile FileName="ISGSetFunSQL_H1.wsdl" MetadataType="Wsdl" ID="45c04fa1-6253-4562-972f-b35389763de7" SourceId="1" SourceUrl="http://localhost:8008/ISGSetFunSQL_H?wsdl=wsdl1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

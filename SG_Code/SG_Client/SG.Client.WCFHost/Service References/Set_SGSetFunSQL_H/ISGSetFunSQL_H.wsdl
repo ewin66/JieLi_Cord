@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="SG.Server.Host.Set" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="SG.Server.Host.Set" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="SG.Server.Host.Set/Imports">
+      <xsd:import schemaLocation="http://localhost:8008/ISGSetFunSQL_H?xsd=xsd0" namespace="SG.Server.Host.Set" />
+      <xsd:import schemaLocation="http://localhost:8008/ISGSetFunSQL_H?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SGSetFunSQL_H_F_DeleteFunSQL_InputMessage">
+    <wsdl:part name="parameters" element="tns:F_DeleteFunSQL" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_F_DeleteFunSQL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:F_DeleteFunSQLResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_F_GetFunSQL_InputMessage">
+    <wsdl:part name="parameters" element="tns:F_GetFunSQL" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_F_GetFunSQL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:F_GetFunSQLResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_F_GetFunSQLByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:F_GetFunSQLByID" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_F_GetFunSQLByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:F_GetFunSQLByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_F_GetFunSQLByUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:F_GetFunSQLByUser" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_F_GetFunSQLByUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:F_GetFunSQLByUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_F_GetFunSQLData_InputMessage">
+    <wsdl:part name="parameters" element="tns:F_GetFunSQLData" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_F_GetFunSQLData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:F_GetFunSQLDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_F_CheckFunNoExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:F_CheckFunNoExists" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_F_CheckFunNoExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:F_CheckFunNoExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_F_GetSysFun_InputMessage">
+    <wsdl:part name="parameters" element="tns:F_GetSysFun" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_F_GetSysFun_OutputMessage">
+    <wsdl:part name="parameters" element="tns:F_GetSysFunResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_F_GetAllFunModel_InputMessage">
+    <wsdl:part name="parameters" element="tns:F_GetAllFunModel" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_F_GetAllFunModel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:F_GetAllFunModelResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_S_DeleteRPTColInfoScheme_InputMessage">
+    <wsdl:part name="parameters" element="tns:S_DeleteRPTColInfoScheme" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_S_DeleteRPTColInfoScheme_OutputMessage">
+    <wsdl:part name="parameters" element="tns:S_DeleteRPTColInfoSchemeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_S_GetRPTScheme_InputMessage">
+    <wsdl:part name="parameters" element="tns:S_GetRPTScheme" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_S_GetRPTScheme_OutputMessage">
+    <wsdl:part name="parameters" element="tns:S_GetRPTSchemeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_S_GetRPTColInfoScheme_InputMessage">
+    <wsdl:part name="parameters" element="tns:S_GetRPTColInfoScheme" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_S_GetRPTColInfoScheme_OutputMessage">
+    <wsdl:part name="parameters" element="tns:S_GetRPTColInfoSchemeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_S_GetRPTColInfoSchemetmp_InputMessage">
+    <wsdl:part name="parameters" element="tns:S_GetRPTColInfoSchemetmp" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_S_GetRPTColInfoSchemetmp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:S_GetRPTColInfoSchemetmpResponse" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_S_CheckRPTNoExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:S_CheckRPTNoExists" />
+  </wsdl:message>
+  <wsdl:message name="SGSetFunSQL_H_S_CheckRPTNoExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:S_CheckRPTNoExistsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SGSetFunSQL_H">
+    <wsdl:operation name="F_DeleteFunSQL">
+      <wsdl:input wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/F_DeleteFunSQL" message="tns:SGSetFunSQL_H_F_DeleteFunSQL_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/F_DeleteFunSQLResponse" message="tns:SGSetFunSQL_H_F_DeleteFunSQL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="F_GetFunSQL">
+      <wsdl:input wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/F_GetFunSQL" message="tns:SGSetFunSQL_H_F_GetFunSQL_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/F_GetFunSQLResponse" message="tns:SGSetFunSQL_H_F_GetFunSQL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="F_GetFunSQLByID">
+      <wsdl:input wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/F_GetFunSQLByID" message="tns:SGSetFunSQL_H_F_GetFunSQLByID_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/F_GetFunSQLByIDResponse" message="tns:SGSetFunSQL_H_F_GetFunSQLByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="F_GetFunSQLByUser">
+      <wsdl:input wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/F_GetFunSQLByUser" message="tns:SGSetFunSQL_H_F_GetFunSQLByUser_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/F_GetFunSQLByUserResponse" message="tns:SGSetFunSQL_H_F_GetFunSQLByUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="F_GetFunSQLData">
+      <wsdl:input wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/F_GetFunSQLData" message="tns:SGSetFunSQL_H_F_GetFunSQLData_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/F_GetFunSQLDataResponse" message="tns:SGSetFunSQL_H_F_GetFunSQLData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="F_CheckFunNoExists">
+      <wsdl:input wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/F_CheckFunNoExists" message="tns:SGSetFunSQL_H_F_CheckFunNoExists_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/F_CheckFunNoExistsResponse" message="tns:SGSetFunSQL_H_F_CheckFunNoExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="F_GetSysFun">
+      <wsdl:input wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/F_GetSysFun" message="tns:SGSetFunSQL_H_F_GetSysFun_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/F_GetSysFunResponse" message="tns:SGSetFunSQL_H_F_GetSysFun_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="F_GetAllFunModel">
+      <wsdl:input wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/F_GetAllFunModel" message="tns:SGSetFunSQL_H_F_GetAllFunModel_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/F_GetAllFunModelResponse" message="tns:SGSetFunSQL_H_F_GetAllFunModel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="S_DeleteRPTColInfoScheme">
+      <wsdl:input wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/S_DeleteRPTColInfoScheme" message="tns:SGSetFunSQL_H_S_DeleteRPTColInfoScheme_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/S_DeleteRPTColInfoSchemeResponse" message="tns:SGSetFunSQL_H_S_DeleteRPTColInfoScheme_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="S_GetRPTScheme">
+      <wsdl:input wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/S_GetRPTScheme" message="tns:SGSetFunSQL_H_S_GetRPTScheme_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/S_GetRPTSchemeResponse" message="tns:SGSetFunSQL_H_S_GetRPTScheme_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="S_GetRPTColInfoScheme">
+      <wsdl:input wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/S_GetRPTColInfoScheme" message="tns:SGSetFunSQL_H_S_GetRPTColInfoScheme_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/S_GetRPTColInfoSchemeResponse" message="tns:SGSetFunSQL_H_S_GetRPTColInfoScheme_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="S_GetRPTColInfoSchemetmp">
+      <wsdl:input wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/S_GetRPTColInfoSchemetmp" message="tns:SGSetFunSQL_H_S_GetRPTColInfoSchemetmp_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/S_GetRPTColInfoSchemetmpResponse" message="tns:SGSetFunSQL_H_S_GetRPTColInfoSchemetmp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="S_CheckRPTNoExists">
+      <wsdl:input wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/S_CheckRPTNoExists" message="tns:SGSetFunSQL_H_S_CheckRPTNoExists_InputMessage" />
+      <wsdl:output wsaw:Action="SG.Server.Host.Set/SGSetFunSQL_H/S_CheckRPTNoExistsResponse" message="tns:SGSetFunSQL_H_S_CheckRPTNoExists_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

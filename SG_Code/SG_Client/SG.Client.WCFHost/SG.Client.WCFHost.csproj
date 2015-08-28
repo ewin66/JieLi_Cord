@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{729B5DB3-7C96-4BCF-801F-29D1812667E9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SG.Client.WCFHost</RootNamespace>
+    <AssemblyName>SG.Client.WCFHost</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Exec\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Base_CommonService_H\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Base_SGBaseDict_H\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Base_SGBaseUser_H\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Database_ISGDatabase_H\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ExtControl_ExtGridControl_H\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Set_SGSetFunSQL_H\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="WcfClientConfig.cs" />
+    <Compile Include="WcfClientFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Base_CommonService_H\CommonService.wsdl" />
+    <None Include="Service References\Base_CommonService_H\CommonService_H.wsdl" />
+    <None Include="Service References\Base_CommonService_H\CommonService_H.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Base_CommonService_H\CommonService_H1.wsdl" />
+    <None Include="Service References\Base_CommonService_H\CommonService_H1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Base_CommonService_H\CommonService_H2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Base_SGBaseDict_H\SGBaseDict.wsdl" />
+    <None Include="Service References\Base_SGBaseDict_H\SGBaseDict_H.wsdl" />
+    <None Include="Service References\Base_SGBaseDict_H\SGBaseDict_H.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Base_SGBaseDict_H\SGBaseDict_H1.wsdl" />
+    <None Include="Service References\Base_SGBaseDict_H\SGBaseDict_H1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Base_SGBaseUser_H\SGBaseUser.wsdl" />
+    <None Include="Service References\Base_SGBaseUser_H\SGBaseUser_H.wsdl" />
+    <None Include="Service References\Base_SGBaseUser_H\SGBaseUser_H.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Base_SGBaseUser_H\SGBaseUser_H1.wsdl" />
+    <None Include="Service References\Base_SGBaseUser_H\SGBaseUser_H1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Database_ISGDatabase_H\ISGDatabase_H.wsdl" />
+    <None Include="Service References\Database_ISGDatabase_H\ISGDatabase_H.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Database_ISGDatabase_H\ISGDatabase_H1.wsdl" />
+    <None Include="Service References\Database_ISGDatabase_H\ISGDatabase_H1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Database_ISGDatabase_H\SGDatabase.wsdl" />
+    <None Include="Service References\ExtControl_ExtGridControl_H\ExtGridControl.wsdl" />
+    <None Include="Service References\ExtControl_ExtGridControl_H\ExtGridControl_H.wsdl" />
+    <None Include="Service References\ExtControl_ExtGridControl_H\ExtGridControl_H.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ExtControl_ExtGridControl_H\ExtGridControl_H1.wsdl" />
+    <None Include="Service References\ExtControl_ExtGridControl_H\ExtGridControl_H1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Set_SGSetFunSQL_H\ISGSetFunSQL_H.wsdl" />
+    <None Include="Service References\Set_SGSetFunSQL_H\ISGSetFunSQL_H.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Set_SGSetFunSQL_H\ISGSetFunSQL_H1.wsdl" />
+    <None Include="Service References\Set_SGSetFunSQL_H\ISGSetFunSQL_H1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Set_SGSetFunSQL_H\SGSetFunSQL.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Base_CommonService_H\" />
+    <WCFMetadataStorage Include="Service References\Base_SGBaseDict_H\" />
+    <WCFMetadataStorage Include="Service References\Base_SGBaseUser_H\" />
+    <WCFMetadataStorage Include="Service References\Database_ISGDatabase_H\" />
+    <WCFMetadataStorage Include="Service References\ExtControl_ExtGridControl_H\" />
+    <WCFMetadataStorage Include="Service References\Set_SGSetFunSQL_H\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Base_CommonService_H\CommonService_H.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Base_CommonService_H\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Base_CommonService_H\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Base_CommonService_H\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Base_SGBaseDict_H\SGBaseDict_H.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Base_SGBaseDict_H\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Base_SGBaseDict_H\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Base_SGBaseDict_H\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Base_SGBaseUser_H\SGBaseUser_H.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Base_SGBaseUser_H\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Base_SGBaseUser_H\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Base_SGBaseUser_H\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Database_ISGDatabase_H\ISGDatabase_H.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Database_ISGDatabase_H\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Database_ISGDatabase_H\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Database_ISGDatabase_H\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Set_SGSetFunSQL_H\ISGSetFunSQL_H.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Set_SGSetFunSQL_H\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Set_SGSetFunSQL_H\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Set_SGSetFunSQL_H\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExtControl_ExtGridControl_H\ExtGridControl_H.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExtControl_ExtGridControl_H\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExtControl_ExtGridControl_H\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExtControl_ExtGridControl_H\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

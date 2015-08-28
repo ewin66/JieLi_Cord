@@ -1,0 +1,5 @@
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Business\obj\Debug\SG.Business.csprojResolveAssemblyReference.cache
+F:\SygolePosition\SGTeam\SG_Code\Exec\SG.Business.dll
+F:\SygolePosition\SGTeam\SG_Code\Exec\SG.Business.pdb
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Business\obj\Debug\SG.Business.dll
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Business\obj\Debug\SG.Business.pdb

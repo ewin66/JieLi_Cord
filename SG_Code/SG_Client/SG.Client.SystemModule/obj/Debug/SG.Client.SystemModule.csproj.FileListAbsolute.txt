@@ -1,0 +1,16 @@
+F:\SygolePosition\SGTeam\SG_Code\Exec\SG.Client.SystemModule.dll
+F:\SygolePosition\SGTeam\SG_Code\Exec\SG.Client.SystemModule.pdb
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.SystemModule\obj\Debug\SG.Client.SystemModule.csprojResolveAssemblyReference.cache
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.SystemModule\obj\Debug\SG.Client.SystemModule.frmChangeTagName.resources
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.SystemModule\obj\Debug\SG.Client.SystemModule.frmCompanyInfo.resources
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.SystemModule\obj\Debug\SG.Client.SystemModule.frmDbLink.resources
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.SystemModule\obj\Debug\SG.Client.SystemModule.frmGroup.resources
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.SystemModule\obj\Debug\SG.Client.SystemModule.frmMenuAuth.resources
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.SystemModule\obj\Debug\SG.Client.SystemModule.frmSystemMain.resources
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.SystemModule\obj\Debug\SG.Client.SystemModule.frmSystemProfile.resources
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.SystemModule\obj\Debug\SG.Client.SystemModule.frmUser.resources
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.SystemModule\obj\Debug\SG.Client.SystemModule.Properties.Resources.resources
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.SystemModule\obj\Debug\SG.Client.SystemModule.csproj.GenerateResource.Cache
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.SystemModule\obj\Debug\SG.Client.SystemModule.dll.licenses
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.SystemModule\obj\Debug\SG.Client.SystemModule.dll
+F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.SystemModule\obj\Debug\SG.Client.SystemModule.pdb

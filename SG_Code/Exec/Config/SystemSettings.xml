@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<SystemConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <UpgraderServerIP>127.0.0.1</UpgraderServerIP>
+  <UpgraderServerPort>28345</UpgraderServerPort>
+  <UpgradeType>1</UpgradeType>
+  <AutoCheckVersion>true</AutoCheckVersion>
+  <ExitAppIfOldVersion>true</ExitAppIfOldVersion>
+  <MailHostIP>127.0.0.1</MailHostIP>
+  <MailHostPort>80</MailHostPort>
+  <MailSystemSupportable>true</MailSystemSupportable>
+  <AllowRunMultiInstance>false</AllowRunMultiInstance>
+  <DoubleClickIntoEditMode>true</DoubleClickIntoEditMode>
+  <WriteLocalLog>true</WriteLocalLog>
+  <SkinName>DevExpress Style</SkinName>
+  <LoginAuthType>1</LoginAuthType>
+  <AttachmentStorageType>SQL</AttachmentStorageType>
+  <AttachmentFolder />
+</SystemConfig>
