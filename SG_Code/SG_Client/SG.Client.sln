@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Business", "SG.Business\SG.Business.csproj", "{387FE7EC-624D-4A7D-9F12-94D80D13DE72}"
 EndProject
@@ -43,73 +43,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Business.ExtControl", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Client.Test", "SG.Client.Test\SG.Client.Test.csproj", "{89AFECDA-5BAA-4DBD-9FE8-C3A6D3C5FED4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.Client.BaseDate", "SG.Client.BaseDate\SG.Client.BaseDate.csproj", "{1D86ABC9-6353-45AB-A7EF-EDA989089B95}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 21
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://sy_server:8080/tfs/sygole_dep
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = SG.Business.Base\\SG.Business.Base.csproj
-		SccProjectName1 = SG.Business.Base
-		SccLocalPath1 = SG.Business.Base
-		SccProjectUniqueName2 = SG.Business.Database\\SG.Business.Database.csproj
-		SccProjectName2 = SG.Business.Database
-		SccLocalPath2 = SG.Business.Database
-		SccProjectUniqueName3 = SG.Business.ExtControl\\SG.Business.ExtControl.csproj
-		SccProjectName3 = SG.Business.ExtControl
-		SccLocalPath3 = SG.Business.ExtControl
-		SccProjectUniqueName4 = SG.Business.Set\\SG.Business.Set.csproj
-		SccProjectName4 = SG.Business.Set
-		SccLocalPath4 = SG.Business.Set
-		SccProjectUniqueName5 = SG.Business\\SG.Business.csproj
-		SccProjectName5 = SG.Business
-		SccLocalPath5 = SG.Business
-		SccProjectUniqueName6 = SG.Client.Bridge.Base\\SG.Client.Bridge.Base.csproj
-		SccProjectName6 = SG.Client.Bridge.Base
-		SccLocalPath6 = SG.Client.Bridge.Base
-		SccProjectUniqueName7 = SG.Client.Bridge.Database\\SG.Client.Bridge.Database.csproj
-		SccProjectName7 = SG.Client.Bridge.Database
-		SccLocalPath7 = SG.Client.Bridge.Database
-		SccProjectUniqueName8 = SG.Client.Bridge.ExtControl\\SG.Client.Bridge.ExtControl.csproj
-		SccProjectName8 = SG.Client.Bridge.ExtControl
-		SccLocalPath8 = SG.Client.Bridge.ExtControl
-		SccProjectUniqueName9 = SG.Client.Bridge.Set\\SG.Client.Bridge.Set.csproj
-		SccProjectName9 = SG.Client.Bridge.Set
-		SccLocalPath9 = SG.Client.Bridge.Set
-		SccProjectUniqueName10 = SG.Client.Bridge\\SG.Client.Bridge.csproj
-		SccProjectName10 = SG.Client.Bridge
-		SccLocalPath10 = SG.Client.Bridge
-		SccProjectUniqueName11 = SG.Client.Core\\SG.Client.Core.csproj
-		SccProjectName11 = SG.Client.Core
-		SccLocalPath11 = SG.Client.Core
-		SccProjectUniqueName12 = SG.Client.Database\\SG.Client.Database.csproj
-		SccProjectName12 = SG.Client.Database
-		SccLocalPath12 = SG.Client.Database
-		SccProjectUniqueName13 = SG.Client.Library\\SG.Client.Library.csproj
-		SccProjectName13 = SG.Client.Library
-		SccLocalPath13 = SG.Client.Library
-		SccProjectUniqueName14 = SG.Client.Main\\SG.Client.Main.csproj
-		SccProjectName14 = SG.Client.Main
-		SccLocalPath14 = SG.Client.Main
-		SccProjectUniqueName15 = SG.Client.Resources\\SG.Client.Resources.csproj
-		SccProjectName15 = SG.Client.Resources
-		SccLocalPath15 = SG.Client.Resources
-		SccProjectUniqueName16 = SG.Client.SetModule\\SG.Client.SetModule.csproj
-		SccProjectName16 = SG.Client.SetModule
-		SccLocalPath16 = SG.Client.SetModule
-		SccProjectUniqueName17 = SG.Client.SystemModule\\SG.Client.SystemModule.csproj
-		SccProjectName17 = SG.Client.SystemModule
-		SccLocalPath17 = SG.Client.SystemModule
-		SccProjectUniqueName18 = SG.Client.Test\\SG.Client.Test.csproj
-		SccProjectName18 = SG.Client.Test
-		SccLocalPath18 = SG.Client.Test
-		SccProjectUniqueName19 = SG.Client.WCFHost\\SG.Client.WCFHost.csproj
-		SccProjectName19 = SG.Client.WCFHost
-		SccLocalPath19 = SG.Client.WCFHost
-		SccProjectUniqueName20 = SG.Client.WCFIISHost\\SG.Client.WCFIISHost.csproj
-		SccProjectName20 = SG.Client.WCFIISHost
-		SccLocalPath20 = SG.Client.WCFIISHost
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -195,6 +131,10 @@ Global
 		{89AFECDA-5BAA-4DBD-9FE8-C3A6D3C5FED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89AFECDA-5BAA-4DBD-9FE8-C3A6D3C5FED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89AFECDA-5BAA-4DBD-9FE8-C3A6D3C5FED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D86ABC9-6353-45AB-A7EF-EDA989089B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D86ABC9-6353-45AB-A7EF-EDA989089B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D86ABC9-6353-45AB-A7EF-EDA989089B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D86ABC9-6353-45AB-A7EF-EDA989089B95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

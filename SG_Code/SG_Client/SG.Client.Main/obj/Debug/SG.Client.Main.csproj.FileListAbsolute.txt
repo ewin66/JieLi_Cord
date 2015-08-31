@@ -10,3 +10,6 @@ F:\SygolePosition\SGTeam\SG_Code\Exec\SG.Client.Main.pdb
 F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Main\obj\Debug\SG.Client.Main.exe
 F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Main\obj\Debug\SG.Client.Main.pdb
 F:\SygolePosition\SGTeam\SG_Code\SG_Client\SG.Client.Main\obj\Debug\SG.Client.Main.exe.licenses
+D:\WorkSvn\SG_Code\Exec\SG.Client.Main.exe.config
+D:\WorkSvn\SG_Code\SG_Client\SG.Client.Main\obj\Debug\SG.Client.Main.exe
+D:\WorkSvn\SG_Code\SG_Client\SG.Client.Main\obj\Debug\SG.Client.Main.pdb

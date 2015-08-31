@@ -73,6 +73,7 @@ namespace SG.Client.SystemModule
             this.gcPassword = new DevExpress.XtraEditors.GroupControl();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.gridSplitContainer1 = new DevExpress.XtraGrid.GridSplitContainer();
             this.tpSummary.SuspendLayout();
             this.pnlSummary.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tcBusiness)).BeginInit();
@@ -101,23 +102,25 @@ namespace SG.Client.SystemModule
             ((System.ComponentModel.ISupportInitialize)(this.txtLastLogoutTime.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcPassword)).BeginInit();
             this.gcPassword.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1)).BeginInit();
+            this.gridSplitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tpSummary
             // 
             this.tpSummary.Appearance.PageClient.BackColor = System.Drawing.SystemColors.Control;
             this.tpSummary.Appearance.PageClient.Options.UseBackColor = true;
-            this.tpSummary.Controls.Add(this.gcSummary);
-            this.tpSummary.Size = new System.Drawing.Size(882, 499);
+            this.tpSummary.Controls.Add(this.gridSplitContainer1);
+            this.tpSummary.Size = new System.Drawing.Size(1052, 499);
             // 
             // pnlSummary
             // 
             this.pnlSummary.Location = new System.Drawing.Point(0, 28);
-            this.pnlSummary.Size = new System.Drawing.Size(888, 528);
+            this.pnlSummary.Size = new System.Drawing.Size(1058, 528);
             // 
             // tcBusiness
             // 
-            this.tcBusiness.Size = new System.Drawing.Size(888, 528);
+            this.tcBusiness.Size = new System.Drawing.Size(1058, 528);
             // 
             // tpDetail
             // 
@@ -125,11 +128,11 @@ namespace SG.Client.SystemModule
             this.tpDetail.Appearance.PageClient.Options.UseBackColor = true;
             this.tpDetail.Controls.Add(this.gcDetailEditor);
             this.tpDetail.Padding = new System.Windows.Forms.Padding(5);
-            this.tpDetail.Size = new System.Drawing.Size(776, 482);
+            this.tpDetail.Size = new System.Drawing.Size(1052, 499);
             // 
             // gcNavigator
             // 
-            this.gcNavigator.Size = new System.Drawing.Size(888, 28);
+            this.gcNavigator.Size = new System.Drawing.Size(1058, 28);
             // 
             // controlNavigatorSummary
             // 
@@ -140,12 +143,12 @@ namespace SG.Client.SystemModule
             this.controlNavigatorSummary.Buttons.NextPage.Visible = false;
             this.controlNavigatorSummary.Buttons.PrevPage.Visible = false;
             this.controlNavigatorSummary.Buttons.Remove.Visible = false;
-            this.controlNavigatorSummary.Location = new System.Drawing.Point(710, 2);
+            this.controlNavigatorSummary.Location = new System.Drawing.Point(880, 2);
             this.controlNavigatorSummary.Size = new System.Drawing.Size(176, 24);
             // 
             // lblAboutInfo
             // 
-            this.lblAboutInfo.Location = new System.Drawing.Point(513, 2);
+            this.lblAboutInfo.Location = new System.Drawing.Point(683, 2);
             this.lblAboutInfo.Size = new System.Drawing.Size(197, 24);
             // 
             // gcSummary
@@ -163,7 +166,7 @@ namespace SG.Client.SystemModule
             this.gcSummary.MainView = this.gvSummary;
             this.gcSummary.Name = "gcSummary";
             this.gcSummary.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.gcSummary.Size = new System.Drawing.Size(882, 499);
+            this.gcSummary.Size = new System.Drawing.Size(1052, 499);
             this.gcSummary.TabIndex = 7;
             this.gcSummary.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvSummary});
@@ -184,6 +187,8 @@ namespace SG.Client.SystemModule
             this.colFlagAdmin,
             this.colLoginCounter});
             this.gvSummary.GridControl = this.gcSummary;
+            this.gvSummary.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.None, "", null, "")});
             this.gvSummary.Name = "gvSummary";
             this.gvSummary.OptionsView.ColumnAutoWidth = false;
             this.gvSummary.OptionsView.ShowAutoFilterRow = true;
@@ -229,7 +234,7 @@ namespace SG.Client.SystemModule
             this.colUserName.FieldName = "FUSERNAME";
             this.colUserName.Name = "colUserName";
             this.colUserName.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "FUSERNAME", "用户数:{0}")});
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Min, "FUSERNAME", "用户数:{0}")});
             this.colUserName.Visible = true;
             this.colUserName.VisibleIndex = 0;
             // 
@@ -464,7 +469,7 @@ namespace SG.Client.SystemModule
             this.gcDetailEditor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gcDetailEditor.Location = new System.Drawing.Point(5, 5);
             this.gcDetailEditor.Name = "gcDetailEditor";
-            this.gcDetailEditor.Size = new System.Drawing.Size(766, 472);
+            this.gcDetailEditor.Size = new System.Drawing.Size(1042, 489);
             this.gcDetailEditor.TabIndex = 119;
             // 
             // groupControl1
@@ -618,10 +623,20 @@ namespace SG.Client.SystemModule
             this.label3.TabIndex = 0;
             this.label3.Text = "*";
             // 
+            // gridSplitContainer1
+            // 
+            this.gridSplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridSplitContainer1.Grid = this.gcSummary;
+            this.gridSplitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.gridSplitContainer1.Name = "gridSplitContainer1";
+            this.gridSplitContainer1.Panel1.Controls.Add(this.gcSummary);
+            this.gridSplitContainer1.Size = new System.Drawing.Size(1052, 499);
+            this.gridSplitContainer1.TabIndex = 0;
+            // 
             // frmUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
-            this.ClientSize = new System.Drawing.Size(888, 556);
+            this.ClientSize = new System.Drawing.Size(1058, 556);
             this.Name = "frmUser";
             this.Text = " 用户管理";
             this.Load += new System.EventHandler(this.frmUser_Load);
@@ -656,6 +671,8 @@ namespace SG.Client.SystemModule
             ((System.ComponentModel.ISupportInitialize)(this.gcPassword)).EndInit();
             this.gcPassword.ResumeLayout(false);
             this.gcPassword.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1)).EndInit();
+            this.gridSplitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -708,5 +725,6 @@ namespace SG.Client.SystemModule
         private SG.Client.Library.UserControls.ucCheckedListBoxBinding ucDataSets;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.ListBoxControl lbMyGroups;
+        private DevExpress.XtraGrid.GridSplitContainer gridSplitContainer1;
     }
 }
